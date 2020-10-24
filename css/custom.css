@@ -1,0 +1,12 @@
+body .badge {
+  border-radius: 50% !important;
+}
+
+body .badge-danger {
+  background: #FF0101;
+}
+
+body button:focus {
+  outline: none;
+}
+/*# sourceMappingURL=custom.css.map */

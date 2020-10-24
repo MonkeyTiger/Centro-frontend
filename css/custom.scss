@@ -1,0 +1,21 @@
+body {
+    // customize the bootstrap badge
+    .badge {
+        border-radius: 50% !important;
+        width: 15px;
+        height: 15px;
+        padding-left: 3.5px !important;
+        padding-top: 2.5px !important;
+        text-align: center;
+        font: {
+            size: 12px;
+            family: $Roboto;
+        }
+    }
+    .badge-danger {
+        background: #FF0101;
+    }
+    button:focus {
+        outline: none;
+    }
+}

@@ -1,1 +1,81 @@
-
+@import "./variable.scss";
+@import "./custom.scss";
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    header {
+        width: 100%;
+        height: 80px;
+        background: #0023B0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 108px;
+        .menu {
+            ul {
+                margin-bottom: 0;
+                display: flex;
+                li {
+                    margin-left: 31px;
+                    list-style-type: none;
+                    a {
+                        font: {
+                            family: $mainColor;
+                            size: 18px;
+                            weight: bold;
+                        }
+                        color: white;
+                    }
+                }
+            }
+        }
+        .notification {
+            display: flex;
+            align-items: center;
+            .notice-item {
+                width: 28px;
+                height: 30.5px;
+                position: relative;
+                display: inline-block;
+                margin-left: 13px;
+                .icon {
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                }
+                .badge {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
+            }
+            .auth {
+                #login {
+                    width: 200px;
+                    height: 50px;
+                    background: white;
+                    border: 2px solid #2A50E8;
+                    border-radius: 25px;
+                    color: #2A50E8;
+                    font: {
+                        family: $mainColor;
+                        size: 18px;
+                        weight: bold;
+                    }
+                }
+                #register {
+                    color: white;
+                    text-decoration: none;
+                    margin: 0 18px;
+                    font: {
+                        family: $mainColor;
+                        size: 18px;
+                        weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
