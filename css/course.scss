@@ -6,6 +6,7 @@ body {
     padding: 0;
     overflow-x: hidden;
     header {
+        top: 0;
         width: 100%;
         height: 80px;
         background: #0023B0;
@@ -13,6 +14,8 @@ body {
         align-items: center;
         justify-content: space-between;
         padding: 0 108px;
+        position: fixed;
+        z-index: 100;
         .menu {
             ul {
                 margin-bottom: 0;
@@ -83,11 +86,13 @@ body {
         width: 100%;
         height: 550px !important;
         background: #0023B0;
-        width: 100%;
         position: relative;
         padding: 108px 0 0 105px;
+        margin-top: 80px;
         .banner-bg {
             position: absolute;
+            width: 100%;
+            height: 100%;
             top: 0;
             left: 0;
         }
@@ -139,6 +144,8 @@ body {
         padding: 74px 133.5px;
         background: white;
         .title {
+            display: flex;
+            align-items: center;
             color: black;
             margin-bottom: 93px;
             img {
@@ -164,7 +171,7 @@ body {
                     height: 87px;
                     display: flex;
                     align-items: center;
-                    border-radius: 9px 9px 0 0;
+                    border-radius: 7px 7px 0 0;
                     box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.25);
                     padding: 0 38px;
                     color: white;
@@ -284,6 +291,8 @@ body {
         background: black;
         padding: 87.5px 153px 95px;
         .title {
+            display: flex;
+            align-items: center;
             color: white;
             margin-bottom: 62px;
             img {
@@ -359,11 +368,35 @@ body {
                     background: #0A5947;
                 }
             }
-            .broadcast.blue {
+            .broadcast.dark-blue {
                 .footer {
                     background: #0A0A59;
                 }
             }
+            .broadcast.blue {
+                .footer {
+                    background: #0C4FD3;
+                }
+            }
         }
+        .comment {
+            color: white;
+            margin-top: 45px;
+            text-align: center;
+            font: {
+                size: 22px;
+                family: $SourceSansPro;
+                weight: bold;
+            }
+            line-height: 28px;
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media(max-width: 1400px) {
+    .section-2 {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
     }
 }
