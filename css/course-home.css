@@ -1,0 +1,103 @@
+body .badge {
+  border-radius: 50% !important;
+  width: 15px;
+  height: 15px;
+  padding-left: 3.5px !important;
+  padding-top: 2.5px !important;
+  text-align: center;
+  font-size: 12px;
+  font-family: "Roboto";
+}
+
+body .badge-danger {
+  background: #FF0101;
+}
+
+body button:focus {
+  outline: none;
+}
+
+body header {
+  width: 100%;
+  height: 80px;
+  background: #0F1941;
+  padding: 0 55.5px 0 108px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body header .logo .live {
+  width: 107px;
+  height: 35px;
+  border-radius: 18px;
+  border: none;
+  margin-left: 25px;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  background: #FF0D0D;
+  color: white;
+  font-size: 16px;
+  font-family: "Roboto";
+}
+
+body header .logo .live img {
+  margin-right: 8px;
+}
+
+body header .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body header .links button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  font-family: "Montserrat";
+  line-height: 24px;
+  letter-spacing: -0.24;
+}
+
+body header .links ul {
+  padding-left: 19px;
+  margin-bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body header .links ul li {
+  margin-right: 3px;
+}
+
+body .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .content .video-container .stage {
+  height: 620px;
+  background: black;
+}
+
+body .content .video-container .description {
+  height: 150px;
+  background: #0F1941;
+}
+
+body .content .chat-container {
+  width: 490px;
+  height: 800px;
+  background: #142053;
+}
+/*# sourceMappingURL=course-home.css.map */
