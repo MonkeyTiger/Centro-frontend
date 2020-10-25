@@ -1,3 +1,25 @@
+body {
+  /* Track */
+  /* Handle */
+  /* H    andle on hover */
+}
+
+body ::-webkit-scrollbar {
+  width: 5px;
+}
+
+body ::-webkit-scrollbar-track {
+  background: #142053;
+}
+
+body ::-webkit-scrollbar-thumb {
+  background: #26377B;
+}
+
+body ::-webkit-scrollbar-thumb:hover {
+  background: #26377B;
+}
+
 body .badge {
   border-radius: 50% !important;
   width: 15px;
@@ -13,8 +35,57 @@ body .badge-danger {
   background: #FF0101;
 }
 
-body button:focus {
+body button:focus,
+body textarea:focus,
+body input:focus {
   outline: none;
+}
+
+body .modal .modal-dialog .modal-content {
+  border: 7px solid #2A50E8;
+  border-radius: 28px;
+}
+
+body .modal .modal-dialog .modal-content .modal-header {
+  height: 0;
+  padding: 0;
+  border: none;
+}
+
+body .modal .modal-dialog .modal-content .modal-header .close {
+  padding: 0;
+  width: 42px;
+  height: 42px;
+  background: #B7B7B7;
+  position: absolute;
+  color: #F1F1F1;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Raleway";
+  line-height: 16px;
+  top: 0;
+  right: 0;
+  opacity: 1;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: translate(5px, -5px);
+          transform: translate(5px, -5px);
+}
+
+body .modal .modal-dialog .modal-content .modal-body {
+  border: none;
+}
+
+body .modal .modal-dialog .modal-content .modal-footer {
+  border: none;
 }
 
 body {
@@ -125,6 +196,7 @@ body .banner {
 body .banner .banner-bg {
   position: absolute;
   width: 100%;
+  z-index: 0;
   height: 100%;
   top: 0;
   left: 0;
@@ -132,6 +204,8 @@ body .banner .banner-bg {
 
 body .banner .heading {
   width: 700px;
+  position: absolute;
+  z-index: 10;
 }
 
 body .banner .heading .title {
@@ -155,6 +229,7 @@ body .banner .heading .description {
 
 body .banner .heading #suggest-topic {
   width: 261px;
+  cursor: pointer;
   height: 55px;
   border: 2px solid white;
   border-radius: 28px;
@@ -309,6 +384,17 @@ body .section-1 .user-cards .user-card .footer p span {
 body .section-1 .user-cards .user-card .footer .signup {
   width: 100%;
   height: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  text-decoration: none;
   background: #2A50E8;
   border-radius: 28px;
   color: white;
@@ -450,6 +536,168 @@ body .section-2 .comment {
   font-weight: bold;
   line-height: 28px;
   margin-bottom: 0;
+}
+
+#suggest-topic-modal .modal-dialog {
+  max-width: 1493px;
+}
+
+#suggest-topic-modal .modal-dialog .modal-body {
+  padding: 0;
+}
+
+#suggest-topic-modal .modal-dialog .modal-body .advice {
+  color: white;
+  background: #2A50E8;
+  padding: 84px 15px 0;
+}
+
+#suggest-topic-modal .modal-dialog .modal-body .advice .title {
+  font-size: 45px;
+  font-weight: bold;
+  font-family: "Raleway";
+  text-align: center;
+  line-height: 45px;
+  margin-bottom: 22px;
+}
+
+#suggest-topic-modal .modal-dialog .modal-body .advice .underline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+}
+
+#suggest-topic-modal .modal-dialog .modal-body .advice .underline div {
+  background: white;
+  width: 99px;
+  height: 3px;
+}
+
+#suggest-topic-modal .modal-dialog .modal-body .advice .description {
+  font-size: 26px;
+  font-family: "Raleway";
+  line-height: 28px;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+#suggest-topic-modal .modal-dialog .modal-body .advice .pc {
+  width: 100%;
+  height: 509px;
+  background: url("../imgs/pc.png");
+  position: relative;
+}
+
+#suggest-topic-modal .modal-dialog .modal-body .advice .pc .live-link {
+  position: absolute;
+  bottom: 0;
+  width: 434px;
+  height: 70px;
+  border-radius: 35px;
+  border: 2px solid white;
+  background: none;
+  color: white;
+  font-size: 26px;
+  font-weight: 600;
+  font-family: "Raleway";
+  margin-left: 50%;
+  -webkit-transform: translate(-50%, -36px);
+          transform: translate(-50%, -36px);
+}
+
+#suggest-topic-modal .modal-dialog .modal-body .input-form {
+  padding: 60px 84px 50px;
+}
+
+#suggest-topic-modal .modal-dialog .modal-body .input-form .title {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 900;
+  font-family: "Raleway";
+  line-height: 45px;
+  margin-bottom: 40px;
+}
+
+#suggest-topic-modal .modal-dialog .modal-body .input-form .input-group {
+  padding: 0 35px;
+}
+
+#suggest-topic-modal .modal-dialog .modal-body .input-form .input-group input,
+#suggest-topic-modal .modal-dialog .modal-body .input-form .input-group textarea {
+  width: 100%;
+  border: 2px solid #BFBFBF;
+  color: black;
+  height: 56px;
+  border-radius: 38px;
+  margin-bottom: 20px;
+  padding: 0 37px;
+  font-size: 17px;
+  font-weight: 600;
+  font-family: "Raleway";
+}
+
+#suggest-topic-modal .modal-dialog .modal-body .input-form .input-group input:focus,
+#suggest-topic-modal .modal-dialog .modal-body .input-form .input-group textarea:focus {
+  border: 2px solid #486DFF;
+  color: #2A50E8;
+}
+
+#suggest-topic-modal .modal-dialog .modal-body .input-form .input-group textarea {
+  height: 230px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+#suggest-topic-modal .modal-dialog .modal-body .input-form .input-group button {
+  width: 100%;
+  height: 60px;
+  background: #2A50E8;
+  border: none;
+  border-radius: 45px;
+  position: relative;
+  color: white;
+  margin-top: 6px;
+  margin-bottom: 17px;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "Montserrat";
+}
+
+#suggest-topic-modal .modal-dialog .modal-body .input-form .input-group button img {
+  position: absolute;
+  top: 19.5px;
+  left: 40px;
+}
+
+#suggest-topic-modal .modal-dialog .modal-body .input-form .policy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-bottom: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 10px;
+  font-family: "Raleway";
+}
+
+#suggest-topic-modal .modal-dialog .modal-body .input-form .policy img {
+  margin-right: 7.5px;
+  color: black;
+  line-height: 15px;
+}
+
+#suggest-topic-modal .modal-dialog .modal-body .input-form .policy span {
+  margin-left: 5px;
+  color: #2A50E8 !important;
 }
 
 @media (max-width: 1400px) {

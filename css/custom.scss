@@ -1,5 +1,21 @@
+@import "./variable.scss";
 body {
-    // customize the bootstrap badge
+     ::-webkit-scrollbar {
+        width: 5px;
+    }
+    /* Track */
+     ::-webkit-scrollbar-track {
+        background: #142053;
+    }
+    /* Handle */
+     ::-webkit-scrollbar-thumb {
+        background: #26377B;
+    }
+    /* H    andle on hover */
+     ::-webkit-scrollbar-thumb:hover {
+        background: #26377B;
+    }
+    // c  ustomize the bootstrap badge
     .badge {
         border-radius: 50% !important;
         width: 15px;
@@ -15,7 +31,51 @@ body {
     .badge-danger {
         background: #FF0101;
     }
-    button:focus {
+    button:focus,
+    textarea:focus,
+    input:focus {
         outline: none;
+    }
+    // customize the bootstrap modal style
+    .modal {
+        .modal-dialog {
+            .modal-content {
+                border: 7px solid #2A50E8;
+                border-radius: 28px;
+                .modal-header {
+                    height: 0;
+                    padding: 0;
+                    border: none;
+                    .close {
+                        padding: 0;
+                        width: 42px;
+                        height: 42px;
+                        background: #B7B7B7;
+                        position: absolute;
+                        color: #F1F1F1;
+                        font: {
+                            size: 24px;
+                            weight: bold;
+                            family: $Raleway;
+                        }
+                        line-height: 16px;
+                        top: 0;
+                        right: 0;
+                        opacity: 1;
+                        border-radius: 50px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        transform: translate(5px, -5px);
+                    }
+                }
+                .modal-body {
+                    border: none;
+                }
+                .modal-footer {
+                    border: none;
+                }
+            }
+        }
     }
 }

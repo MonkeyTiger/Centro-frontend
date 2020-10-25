@@ -1,0 +1,556 @@
+body {
+  /* Track */
+  /* Handle */
+  /* H    andle on hover */
+}
+body ::-webkit-scrollbar {
+  width: 5px;
+}
+body ::-webkit-scrollbar-track {
+  background: #142053;
+}
+body ::-webkit-scrollbar-thumb {
+  background: #26377B;
+}
+body ::-webkit-scrollbar-thumb:hover {
+  background: #26377B;
+}
+body .badge {
+  border-radius: 50% !important;
+  width: 15px;
+  height: 15px;
+  padding-left: 3.5px !important;
+  padding-top: 2.5px !important;
+  text-align: center;
+  font-size: 12px;
+  font-family: "Roboto";
+}
+body .badge-danger {
+  background: #FF0101;
+}
+body button:focus,
+body textarea:focus,
+body input:focus {
+  outline: none;
+}
+body .modal .modal-dialog .modal-content {
+  border: 7px solid #2A50E8;
+  border-radius: 28px;
+}
+body .modal .modal-dialog .modal-content .modal-header {
+  height: 0;
+  padding: 0;
+  border: none;
+}
+body .modal .modal-dialog .modal-content .modal-header .close {
+  padding: 0;
+  width: 42px;
+  height: 42px;
+  background: #B7B7B7;
+  position: absolute;
+  color: #F1F1F1;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Raleway";
+  line-height: 16px;
+  top: 0;
+  right: 0;
+  opacity: 1;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(5px, -5px);
+}
+body .modal .modal-dialog .modal-content .modal-body {
+  border: none;
+}
+body .modal .modal-dialog .modal-content .modal-footer {
+  border: none;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+body header {
+  top: 0;
+  width: 100%;
+  height: 80px;
+  background: #0023B0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 108px;
+  position: fixed;
+  z-index: 100;
+}
+body header .menu ul {
+  margin-bottom: 0;
+  display: flex;
+}
+body header .menu ul li {
+  margin-left: 31px;
+  list-style-type: none;
+}
+body header .menu ul li a {
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+body header .notification {
+  display: flex;
+  align-items: center;
+}
+body header .notification .notice-item {
+  width: 28px;
+  height: 30.5px;
+  position: relative;
+  display: inline-block;
+  margin-left: 13px;
+}
+body header .notification .notice-item .icon {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+body header .notification .notice-item .badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+body header .notification .auth #login {
+  width: 200px;
+  height: 50px;
+  background: white;
+  border: 2px solid #2A50E8;
+  border-radius: 25px;
+  color: #2A50E8;
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: bold;
+}
+body header .notification .auth #register {
+  color: white;
+  text-decoration: none;
+  margin: 0 18px;
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: bold;
+}
+body .banner {
+  width: 100%;
+  height: 550px !important;
+  background: #0023B0;
+  position: relative;
+  padding: 108px 0 0 105px;
+  margin-top: 80px;
+}
+body .banner .banner-bg {
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+body .banner .heading {
+  width: 700px;
+  position: absolute;
+  z-index: 10;
+}
+body .banner .heading .title {
+  font-size: 55px;
+  font-weight: bold;
+  font-family: "Montserrat";
+  line-height: 55px;
+  color: white;
+  white-space: -33px;
+  margin-bottom: 20.6px;
+}
+body .banner .heading .description {
+  font-size: 18px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  color: white;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+body .banner .heading #suggest-topic {
+  width: 261px;
+  cursor: pointer;
+  height: 55px;
+  border: 2px solid white;
+  border-radius: 28px;
+  background: none;
+  color: white;
+  font-size: 18px;
+  font-family: "Montserrat";
+  font-weight: 600;
+}
+body .banner .heading #suggest-topic img {
+  width: 24px;
+  height: 24px;
+  margin-right: 26px;
+}
+body .section-1 {
+  width: 100%;
+  padding: 74px 133.5px;
+  background: white;
+}
+body .section-1 .title {
+  display: flex;
+  align-items: center;
+  color: black;
+  margin-bottom: 93px;
+  font-size: 32px;
+  font-weight: bold;
+  font-family: "Montserrat";
+}
+body .section-1 .title img {
+  margin-right: 28px;
+}
+body .section-1 .user-cards {
+  display: flex;
+}
+body .section-1 .user-cards .user-card {
+  width: 420px;
+  background: white;
+  border: 2px solid #DBDBDB;
+  border-radius: 9px;
+  box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.25);
+  margin-right: 22px;
+}
+body .section-1 .user-cards .user-card .header {
+  width: 100%;
+  height: 87px;
+  display: flex;
+  align-items: center;
+  border-radius: 7px 7px 0 0;
+  box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.25);
+  padding: 0 38px;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Montserrat";
+  line-height: 22px;
+}
+body .section-1 .user-cards .user-card .header img {
+  border-radius: 50%;
+  margin-right: 15px;
+}
+body .section-1 .user-cards .user-card .content {
+  height: 280px;
+  padding: 22px 31.5px 0;
+}
+body .section-1 .user-cards .user-card .content .live {
+  width: 180px;
+  height: 35px;
+  background: #FF0D0D;
+  border-radius: 18px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  color: white;
+  font-size: 16px;
+  font-family: "Roboto";
+  line-height: 22px;
+  border: none;
+  margin-bottom: 16px;
+}
+body .section-1 .user-cards .user-card .content .live img {
+  margin-right: 10px;
+}
+body .section-1 .user-cards .user-card .content .title {
+  font-size: 35px;
+  font-family: "Raleway";
+  font-weight: 800;
+  color: #12209D;
+  line-height: 35px;
+  margin-bottom: 6px;
+}
+body .section-1 .user-cards .user-card .content .description {
+  font-size: 20px;
+  font-family: "Segoe UI";
+  line-height: 22px;
+  color: #707070;
+}
+body .section-1 .user-cards .user-card .footer {
+  padding: 0 31.5px 35.8px;
+}
+body .section-1 .user-cards .user-card .footer p {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+body .section-1 .user-cards .user-card .footer p img {
+  margin-right: 13px;
+}
+body .section-1 .user-cards .user-card .footer p span {
+  display: flex;
+  align-items: center;
+  font-family: "Source Sans Pro";
+  font-size: 18px;
+  font-weight: 600;
+}
+body .section-1 .user-cards .user-card .footer .signup {
+  width: 100%;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  background: #2A50E8;
+  border-radius: 28px;
+  color: white;
+  text-align: center;
+  position: relative;
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 24px;
+  border: none;
+}
+body .section-1 .user-cards .user-card .footer .signup img {
+  position: absolute;
+  top: 15px;
+  left: 40px;
+}
+body .section-1 .user-cards .user-card.pink .header {
+  background: #613A80;
+}
+body .section-1 .user-cards .user-card.pink .header img {
+  border: 2px solid #512573;
+}
+body .section-1 .user-cards .user-card.green .header {
+  background: #088B5F;
+}
+body .section-1 .user-cards .user-card.green .header img {
+  border: 2px solid #0D4216;
+}
+body .section-2 {
+  width: 100%;
+  background: black;
+  padding: 87.5px 153px 95px;
+}
+body .section-2 .title {
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-bottom: 62px;
+  font-size: 32px;
+  font-weight: bold;
+  font-family: "Montserrat";
+}
+body .section-2 .title img {
+  margin-right: 28px;
+}
+body .section-2 .broadcasts .broadcast {
+  margin-bottom: 20px;
+}
+body .section-2 .broadcasts .broadcast .body {
+  width: 100%;
+  height: 197px;
+  background: white;
+}
+body .section-2 .broadcasts .broadcast .footer {
+  width: 100%;
+  height: 202px;
+  padding: 33px 28px;
+}
+body .section-2 .broadcasts .broadcast .footer .title {
+  color: white;
+  margin-bottom: 10px;
+  font-family: "Raleway";
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 28px;
+}
+body .section-2 .broadcasts .broadcast .footer .user-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 22px;
+}
+body .section-2 .broadcasts .broadcast .footer .user-info .avatar {
+  margin-right: 9px;
+}
+body .section-2 .broadcasts .broadcast .footer .user-info .name {
+  color: white !important;
+  font-family: "Montserrat";
+  font-size: 16px;
+  line-height: 19px;
+}
+body .section-2 .broadcasts .broadcast .footer .detail-info span {
+  font-family: "Montserrat";
+  font-size: 16px;
+  color: white;
+  line-height: 19px;
+  margin-right: 32px;
+}
+body .section-2 .broadcasts .broadcast .footer .detail-info span img {
+  margin-right: 9px;
+}
+body .section-2 .broadcasts .broadcast.red .footer {
+  background: #E30B0B;
+}
+body .section-2 .broadcasts .broadcast.green .footer {
+  background: #0A5947;
+}
+body .section-2 .broadcasts .broadcast.dark-blue .footer {
+  background: #0A0A59;
+}
+body .section-2 .broadcasts .broadcast.blue .footer {
+  background: #0C4FD3;
+}
+body .section-2 .comment {
+  color: white;
+  margin-top: 45px;
+  text-align: center;
+  font-size: 22px;
+  font-family: "Source Sans Pro";
+  font-weight: bold;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+
+#suggest-topic-modal .modal-dialog {
+  max-width: 1493px;
+}
+#suggest-topic-modal .modal-dialog .modal-body {
+  padding: 0;
+}
+#suggest-topic-modal .modal-dialog .modal-body .advice {
+  color: white;
+  background: #2A50E8;
+  padding: 84px 15px 0;
+}
+#suggest-topic-modal .modal-dialog .modal-body .advice .title {
+  font-size: 45px;
+  font-weight: bold;
+  font-family: "Raleway";
+  text-align: center;
+  line-height: 45px;
+  margin-bottom: 22px;
+}
+#suggest-topic-modal .modal-dialog .modal-body .advice .underline {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+#suggest-topic-modal .modal-dialog .modal-body .advice .underline div {
+  background: white;
+  width: 99px;
+  height: 3px;
+}
+#suggest-topic-modal .modal-dialog .modal-body .advice .description {
+  font-size: 26px;
+  font-family: "Raleway";
+  line-height: 28px;
+  text-align: center;
+  margin-bottom: 45px;
+}
+#suggest-topic-modal .modal-dialog .modal-body .advice .pc {
+  width: 100%;
+  height: 509px;
+  background: url("../imgs/pc.png");
+  position: relative;
+}
+#suggest-topic-modal .modal-dialog .modal-body .advice .pc .live-link {
+  position: absolute;
+  bottom: 0;
+  width: 434px;
+  height: 70px;
+  border-radius: 35px;
+  border: 2px solid white;
+  background: none;
+  color: white;
+  font-size: 26px;
+  font-weight: 600;
+  font-family: "Raleway";
+  margin-left: 50%;
+  transform: translate(-50%, -36px);
+}
+#suggest-topic-modal .modal-dialog .modal-body .input-form {
+  padding: 60px 84px 50px;
+}
+#suggest-topic-modal .modal-dialog .modal-body .input-form .title {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 900;
+  font-family: "Raleway";
+  line-height: 45px;
+  margin-bottom: 40px;
+}
+#suggest-topic-modal .modal-dialog .modal-body .input-form .input-group {
+  padding: 0 35px;
+}
+#suggest-topic-modal .modal-dialog .modal-body .input-form .input-group input,
+#suggest-topic-modal .modal-dialog .modal-body .input-form .input-group textarea {
+  width: 100%;
+  border: 2px solid #BFBFBF;
+  color: black;
+  height: 56px;
+  border-radius: 38px;
+  margin-bottom: 20px;
+  padding: 0 37px;
+  font-size: 17px;
+  font-weight: 600;
+  font-family: "Raleway";
+}
+#suggest-topic-modal .modal-dialog .modal-body .input-form .input-group input:focus,
+#suggest-topic-modal .modal-dialog .modal-body .input-form .input-group textarea:focus {
+  border: 2px solid #486DFF;
+  color: #2A50E8;
+}
+#suggest-topic-modal .modal-dialog .modal-body .input-form .input-group textarea {
+  height: 230px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+#suggest-topic-modal .modal-dialog .modal-body .input-form .input-group button {
+  width: 100%;
+  height: 60px;
+  background: #2A50E8;
+  border: none;
+  border-radius: 45px;
+  position: relative;
+  color: white;
+  margin-top: 6px;
+  margin-bottom: 17px;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "Montserrat";
+}
+#suggest-topic-modal .modal-dialog .modal-body .input-form .input-group button img {
+  position: absolute;
+  top: 19.5px;
+  left: 40px;
+}
+#suggest-topic-modal .modal-dialog .modal-body .input-form .policy {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 0;
+  justify-content: center;
+  font-size: 10px;
+  font-family: "Raleway";
+}
+#suggest-topic-modal .modal-dialog .modal-body .input-form .policy img {
+  margin-right: 7.5px;
+  color: black;
+  line-height: 15px;
+}
+#suggest-topic-modal .modal-dialog .modal-body .input-form .policy span {
+  margin-left: 5px;
+  color: #2A50E8 !important;
+}
+
+@media (max-width: 1400px) {
+  .section-2 {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+}

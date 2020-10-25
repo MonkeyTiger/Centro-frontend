@@ -1,0 +1,70 @@
+body {
+  /* Track */
+  /* Handle */
+  /* H    andle on hover */
+}
+body ::-webkit-scrollbar {
+  width: 5px;
+}
+body ::-webkit-scrollbar-track {
+  background: #142053;
+}
+body ::-webkit-scrollbar-thumb {
+  background: #26377B;
+}
+body ::-webkit-scrollbar-thumb:hover {
+  background: #26377B;
+}
+body .badge {
+  border-radius: 50% !important;
+  width: 15px;
+  height: 15px;
+  padding-left: 3.5px !important;
+  padding-top: 2.5px !important;
+  text-align: center;
+  font-size: 12px;
+  font-family: "Roboto";
+}
+body .badge-danger {
+  background: #FF0101;
+}
+body button:focus,
+body textarea:focus,
+body input:focus {
+  outline: none;
+}
+body .modal .modal-dialog .modal-content {
+  border: 7px solid #2A50E8;
+  border-radius: 28px;
+}
+body .modal .modal-dialog .modal-content .modal-header {
+  height: 0;
+  padding: 0;
+  border: none;
+}
+body .modal .modal-dialog .modal-content .modal-header .close {
+  padding: 0;
+  width: 42px;
+  height: 42px;
+  background: #B7B7B7;
+  position: absolute;
+  color: #F1F1F1;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Raleway";
+  line-height: 16px;
+  top: 0;
+  right: 0;
+  opacity: 1;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(5px, -5px);
+}
+body .modal .modal-dialog .modal-content .modal-body {
+  border: none;
+}
+body .modal .modal-dialog .modal-content .modal-footer {
+  border: none;
+}

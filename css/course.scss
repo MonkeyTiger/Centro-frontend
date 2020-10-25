@@ -92,12 +92,15 @@ body {
         .banner-bg {
             position: absolute;
             width: 100%;
+            z-index: 0;
             height: 100%;
             top: 0;
             left: 0;
         }
         .heading {
             width: 700px;
+            position: absolute;
+            z-index: 10;
             .title {
                 font: {
                     size: 55px;
@@ -121,6 +124,7 @@ body {
             }
             #suggest-topic {
                 width: 261px;
+                cursor: pointer;
                 height: 55px;
                 border: 2px solid white;
                 border-radius: 28px;
@@ -248,6 +252,11 @@ body {
                     .signup {
                         width: 100%;
                         height: 55px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        cursor: pointer;
+                        text-decoration: none;
                         background: #2A50E8;
                         border-radius: 28px;
                         color: white;
@@ -390,6 +399,155 @@ body {
             }
             line-height: 28px;
             margin-bottom: 0;
+        }
+    }
+}
+
+#suggest-topic-modal {
+    .modal-dialog {
+        max-width: 1493px;
+        .modal-body {
+            padding: 0;
+            .advice {
+                color: white;
+                background: #2A50E8;
+                padding: 84px 15px 0;
+                .title {
+                    font: {
+                        size: 45px;
+                        weight: bold;
+                        family: $Raleway;
+                    }
+                    text-align: center;
+                    line-height: 45px;
+                    margin-bottom: 22px;
+                }
+                .underline {
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 20px;
+                    div {
+                        background: white;
+                        width: 99px;
+                        height: 3px;
+                    }
+                }
+                .description {
+                    font: {
+                        size: 26px;
+                        family: $Raleway;
+                    }
+                    line-height: 28px;
+                    text-align: center;
+                    margin-bottom: 45px;
+                }
+                .pc {
+                    width: 100%;
+                    height: 509px;
+                    background: url("../imgs/pc.png");
+                    position: relative;
+                    .live-link {
+                        position: absolute;
+                        bottom: 0;
+                        width: 434px;
+                        height: 70px;
+                        border-radius: 35px;
+                        border: 2px solid white;
+                        background: none;
+                        color: white;
+                        font: {
+                            size: 26px;
+                            weight: 600;
+                            family: $Raleway;
+                        }
+                        margin-left: 50%;
+                        transform: translate(-50%,
+                        -36px);
+                    }
+                }
+            }
+            .input-form {
+                padding: 60px 84px 50px;
+                .title {
+                    text-align: center;
+                    font: {
+                        size: 45px;
+                        weight: 900;
+                        family: $Raleway;
+                    }
+                    line-height: 45px;
+                    margin-bottom: 40px;
+                }
+                .input-group {
+                    padding: 0 35px;
+                    input,
+                    textarea {
+                        width: 100%;
+                        border: 2px solid #BFBFBF;
+                        color: black;
+                        height: 56px;
+                        border-radius: 38px;
+                        margin-bottom: 20px;
+                        padding: 0 37px;
+                        font: {
+                            size: 17px;
+                            weight: 600;
+                            family: $Raleway;
+                        }
+                    }
+                    input:focus,
+                    textarea:focus {
+                        border: 2px solid #486DFF;
+                        color: #2A50E8;
+                    }
+                    textarea {
+                        height: 230px;
+                        padding-top: 35px;
+                        padding-bottom: 35px;
+                    }
+                    button {
+                        width: 100%;
+                        height: 60px;
+                        background: #2A50E8;
+                        border: none;
+                        border-radius: 45px;
+                        position: relative;
+                        color: white;
+                        margin-top: 6px;
+                        margin-bottom: 17px;
+                        font: {
+                            size: 14px;
+                            weight: bold;
+                            family: $mainFont;
+                        }
+                        img {
+                            position: absolute;
+                            top: 19.5px;
+                            left: 40px;
+                        }
+                    }
+                }
+                .policy {
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    margin-bottom: 0;
+                    justify-content: center;
+                    font: {
+                        size: 10px;
+                        family: $Raleway;
+                    }
+                    img {
+                        margin-right: 7.5px;
+                        color: black;
+                        line-height: 15px;
+                    }
+                    span {
+                        margin-left: 5px;
+                        color: #2A50E8 !important;
+                    }
+                }
+            }
         }
     }
 }

@@ -1,3 +1,25 @@
+body {
+  /* Track */
+  /* Handle */
+  /* H    andle on hover */
+}
+
+body ::-webkit-scrollbar {
+  width: 5px;
+}
+
+body ::-webkit-scrollbar-track {
+  background: #142053;
+}
+
+body ::-webkit-scrollbar-thumb {
+  background: #26377B;
+}
+
+body ::-webkit-scrollbar-thumb:hover {
+  background: #26377B;
+}
+
 body .badge {
   border-radius: 50% !important;
   width: 15px;
@@ -13,15 +35,64 @@ body .badge-danger {
   background: #FF0101;
 }
 
-body button:focus {
+body button:focus,
+body textarea:focus,
+body input:focus {
   outline: none;
+}
+
+body .modal .modal-dialog .modal-content {
+  border: 7px solid #2A50E8;
+  border-radius: 28px;
+}
+
+body .modal .modal-dialog .modal-content .modal-header {
+  height: 0;
+  padding: 0;
+  border: none;
+}
+
+body .modal .modal-dialog .modal-content .modal-header .close {
+  padding: 0;
+  width: 42px;
+  height: 42px;
+  background: #B7B7B7;
+  position: absolute;
+  color: #F1F1F1;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Raleway";
+  line-height: 16px;
+  top: 0;
+  right: 0;
+  opacity: 1;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: translate(5px, -5px);
+          transform: translate(5px, -5px);
+}
+
+body .modal .modal-dialog .modal-content .modal-body {
+  border: none;
+}
+
+body .modal .modal-dialog .modal-content .modal-footer {
+  border: none;
 }
 
 body header {
   width: 100%;
   height: 80px;
   background: #0F1941;
-  padding: 0 55.5px 0 108px;
+  padding: 0 55.5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -77,6 +148,12 @@ body header .links ul {
 
 body header .links ul li {
   margin-right: 3px;
+  list-style-type: none;
+}
+
+body header .links ul li img {
+  width: 100%;
+  height: 100%;
 }
 
 body .content {
@@ -85,19 +162,533 @@ body .content {
   display: flex;
 }
 
+body .content .video-container {
+  width: calc(100% - 490px);
+}
+
 body .content .video-container .stage {
+  padding: 202px 0 0 103px;
   height: 620px;
   background: black;
+  position: relative;
+}
+
+body .content .video-container .stage .bg {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+body .content .video-container .stage .timer {
+  color: white;
+}
+
+body .content .video-container .stage .timer .title {
+  font-size: 28px;
+  font-family: "Raleway";
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+
+body .content .video-container .stage .timer .timer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 125px;
+  padding: 12.5px;
+}
+
+body .content .video-container .stage .timer .timer-content .item {
+  margin-right: 20px;
+}
+
+body .content .video-container .stage .timer .timer-content .item .pie-graph {
+  width: 100px;
+  height: 100px;
+  border-radius: 70px;
+  border: 5px solid white;
+  margin-bottom: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #E5DBBD;
+  font-size: 40px;
+  font-family: sans-serif;
+}
+
+body .content .video-container .stage .timer .timer-content .item .descr {
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  font-family: "Raleway";
 }
 
 body .content .video-container .description {
   height: 150px;
+  padding: 20px 27px 0 103px;
   background: #0F1941;
+}
+
+body .content .video-container .description .title {
+  color: white;
+  font-size: 28px;
+  font-family: "Raleway";
+  font-weight: 800;
+  letter-spacing: -0.25;
+  line-height: 28px;
+  margin-bottom: 8px;
+}
+
+body .content .video-container .description .user-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Montserrat";
+  letter-spacing: -0.22;
+  line-height: 19px;
+}
+
+body .content .video-container .description .user-info img {
+  margin-right: 14px;
+}
+
+body .content .video-container .description .detail-info span {
+  color: white;
+  margin-right: 25px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Source Sans Pro";
+}
+
+body .content .video-container .description .detail-info span img {
+  margin-right: 10px;
+}
+
+body .content .video-container .description .signup {
+  width: 356px;
+  height: 55px;
+  background: #2A50E8;
+  border-radius: 28px;
+  color: white;
+  position: relative;
+  border: none;
+  font-size: 20px;
+  font-family: "Montserrat";
+  font-weight: bold;
+}
+
+body .content .video-container .description .signup img {
+  position: absolute;
+  top: 15px;
+  left: 40px;
 }
 
 body .content .chat-container {
   width: 490px;
-  height: 800px;
+  height: 770px;
   background: #142053;
+}
+
+body .content .chat-container .nav-tabs#tab {
+  width: 100%;
+  height: 62px;
+  background: #1E2A5C;
+  border: none;
+}
+
+body .content .chat-container .nav-tabs#tab .nav-item {
+  height: 100%;
+}
+
+body .content .chat-container .nav-tabs#tab .nav-item .nav-link {
+  height: 100%;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 30px;
+  color: white;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Montserrat";
+}
+
+body .content .chat-container .nav-tabs#tab .nav-item .nav-link:hover {
+  border: none;
+}
+
+body .content .chat-container .nav-tabs#tab .nav-item .nav-link.active {
+  background: none;
+  border: none;
+  border-bottom: 3px solid #10B12B;
+  color: #10B12B;
+}
+
+body .content .chat-container .tab-content#tabContent #chatbox .history {
+  height: calc(770px - 167px);
+  overflow-y: scroll;
+  padding: 36px 36px 0 30px;
+}
+
+body .content .chat-container .tab-content#tabContent #chatbox .history .chat-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 33px;
+}
+
+body .content .chat-container .tab-content#tabContent #chatbox .history .chat-item .avatar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+body .content .chat-container .tab-content#tabContent #chatbox .history .chat-item .avatar img {
+  margin-right: 18px;
+}
+
+body .content .chat-container .tab-content#tabContent #chatbox .history .chat-item .chat-content {
+  background: #26377B;
+  color: white;
+  border-radius: 20px 20px 20px 0;
+  padding: 27px 27px 16px;
+}
+
+body .content .chat-container .tab-content#tabContent #chatbox .history .chat-item .chat-content p:first-child {
+  margin-bottom: 6px;
+  font-size: 15px;
+  font-family: "SF Pro Text";
+  line-height: 22px;
+}
+
+body .content .chat-container .tab-content#tabContent #chatbox .history .chat-item .chat-content .history-time {
+  color: #CCCCCC;
+  margin-bottom: 0;
+  font-size: 13px;
+  font-family: "SF Pro Text";
+  line-height: 18px;
+}
+
+body .content .chat-container .tab-content#tabContent #chatbox .chat-inputbox {
+  padding: 25px 40px;
+  width: 100%;
+  height: 105px;
+  background: #1E2A5C;
+}
+
+body .content .chat-container .tab-content#tabContent #chatbox .chat-inputbox .input-box {
+  padding: 8px 12px;
+  width: 382px;
+  height: 56px;
+  background: #26377B;
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .content .chat-container .tab-content#tabContent #chatbox .chat-inputbox .input-box .emoticon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: none;
+  border: none;
+}
+
+body .content .chat-container .tab-content#tabContent #chatbox .chat-inputbox .input-box input {
+  font-size: 15px;
+  font-family: "SF Pro Text";
+  line-height: 22px;
+  color: #CCCCCC;
+  width: 100%;
+  background: none;
+  height: 100%;
+  padding: 0 12px;
+  border: none;
+}
+
+body .content .chat-container .tab-content#tabContent #chatbox .chat-inputbox .input-box div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .content .chat-container .tab-content#tabContent #chatbox .chat-inputbox .input-box div button {
+  width: 40px;
+  height: 40px;
+  background: #007EF4;
+  border: none;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .content .chat-container .tab-content#tabContent #chatbox .chat-inputbox .input-box div .voice-call {
+  margin-left: 12px;
+}
+
+body .content .chat-container .tab-content#tabContent #descriptionbox {
+  color: white;
+  padding: 42px 0 0 40px;
+}
+
+body .content .chat-container .tab-content#tabContent #descriptionbox .topic {
+  color: #6C7DF2;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Raleway";
+  font-margin-bottom: 7px;
+  font-line-height: 18px;
+}
+
+body .content .chat-container .tab-content#tabContent #descriptionbox .topic-title {
+  font-size: 28px;
+  font-weight: 800;
+  font-family: "Raleway";
+  line-height: 28px;
+  margin-bottom: 52px;
+}
+
+body .content .chat-container .tab-content#tabContent #descriptionbox .user-info .title {
+  font-size: 18px;
+  font-family: "Raleway";
+  font-weight: bold;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+
+body .content .chat-container .tab-content#tabContent #descriptionbox .user-info .avatar {
+  margin-bottom: 13.3px;
+}
+
+body .content .chat-container .tab-content#tabContent #descriptionbox .user-info .name {
+  color: #6C7DF2;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Montserrat";
+  margin-bottom: 16px;
+  line-height: 22px;
+}
+
+body .content .chat-container .tab-content#tabContent #descriptionbox .user-info .description {
+  font-size: 18px;
+  font-family: "Raleway";
+  line-height: 28px;
+}
+
+body #signup-modal .modal-dialog {
+  max-width: 519px;
+}
+
+body #signup-modal .modal-dialog .modal-body {
+  text-align: center;
+  padding: 32px 40px;
+}
+
+body #signup-modal .modal-dialog .modal-body .title {
+  font-size: 32px;
+  font-family: "Raleway";
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+body #signup-modal .modal-dialog .modal-body .underline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 17px;
+}
+
+body #signup-modal .modal-dialog .modal-body .underline div {
+  background: #486DFF;
+  width: 79px;
+  height: 3px;
+}
+
+body #signup-modal .modal-dialog .modal-body .description {
+  font-family: "Raleway";
+  font-size: 22px;
+  line-height: 24px;
+  margin-bottom: 28px;
+}
+
+body #signup-modal .modal-dialog .modal-body .input-group {
+  padding: 0 35px;
+}
+
+body #signup-modal .modal-dialog .modal-body .input-group input {
+  width: 100%;
+  border: 2px solid #BFBFBF;
+  color: black;
+  height: 56px;
+  border-radius: 38px;
+  margin: 0 0 13px;
+  padding: 0 37px;
+  font-size: 17px;
+  font-weight: 600;
+  font-family: "Raleway";
+}
+
+body #signup-modal .modal-dialog .modal-body .input-group input:focus {
+  border: 2px solid #486DFF;
+  color: #2A50E8;
+}
+
+body #signup-modal .modal-dialog .modal-body .input-group button {
+  width: 100%;
+  height: 60px;
+  background: #2A50E8;
+  border: none;
+  border-radius: 45px;
+  position: relative;
+  color: white;
+  margin-top: 6px;
+  margin-bottom: 17px;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "Montserrat";
+}
+
+body #signup-modal .modal-dialog .modal-body .input-group button img {
+  position: absolute;
+  top: 19.5px;
+  left: 40px;
+}
+
+body #signup-modal .modal-dialog .modal-body .policy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-bottom: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 10px;
+  font-family: "Raleway";
+}
+
+body #signup-modal .modal-dialog .modal-body .policy img {
+  margin-right: 7.5px;
+  color: black;
+  line-height: 15px;
+}
+
+body #signup-modal .modal-dialog .modal-body .policy span {
+  margin-left: 5px;
+  color: #2A50E8 !important;
+}
+
+body #social-modal .modal-dialog {
+  max-width: 585px;
+}
+
+body #social-modal .modal-dialog .modal-body {
+  padding: 33px 121px 36px;
+}
+
+body #social-modal .modal-dialog .modal-body .title {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Montserrat";
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+body #social-modal .modal-dialog .modal-body button {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 45px;
+  margin-bottom: 8px;
+  border-radius: 45px;
+  padding: 0 16px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 13px;
+  font-weight: bold;
+  font-family: "Montserrat";
+}
+
+body #social-modal .modal-dialog .modal-body button img {
+  margin-right: 30px;
+}
+
+body #social-modal .modal-dialog .modal-body .outline-black {
+  background: white;
+  color: black;
+  border: 2px solid black;
+}
+
+body #social-modal .modal-dialog .modal-body .outline-dark {
+  background: white;
+  color: #041A57;
+  border: 2px solid #041A57;
+}
+
+body #social-modal .modal-dialog .modal-body .outline-success {
+  background: white;
+  color: #178BC8;
+  border: 2px solid #178BC8;
+}
+
+body #social-modal .modal-dialog .modal-body .outline-info {
+  background: white;
+  color: #178BC8;
+  border: 2px solid #178BC8;
+}
+
+body #social-modal .modal-dialog .modal-body .outline-danger {
+  background: white;
+  color: #B50E86;
+  border: 2px solid #B50E86;
 }
 /*# sourceMappingURL=course-home.css.map */

@@ -59,7 +59,7 @@
             <p class="description">
                 sigue nuestras transmisiones cada semana y aprende<br> de manera gratuita y mejora tus competencias<br> profesionales.
             </p>
-            <button type="button" id="suggest-topic">
+            <button type="button" id="suggest-topic" data-toggle="modal" data-target="#suggest-topic-modal">
                 <img src="./imgs/icon/pencil.png" alt="" />
                 Sugerir Tema
             </button>
@@ -102,10 +102,9 @@
                             5:00 pm
                         </span>
                     </p>
-                    <button class="signup">
-                        <img src="./imgs/icon/pencil.png" alt="">
-                        Inscribirme
-                    </button>
+                    <a href="./course-home.html" class="signup">
+                        <img src="./imgs/icon/pencil.png" alt=""> Inscribirme
+                    </a>
                 </div>
             </div>
             <div class="user-card green">
@@ -136,10 +135,9 @@
                             5:00 pm
                         </span>
                     </p>
-                    <button class="signup">
-                        <img src="./imgs/icon/pencil.png" alt="">
-                        Inscribirme
-                    </button>
+                    <a href="./course-home.html" class="signup">
+                        <img src="./imgs/icon/pencil.png" alt=""> Inscribirme
+                    </a>
                 </div>
             </div>
         </div>
@@ -350,6 +348,56 @@
         <p class="comment">Ver todos los seminarios</p>
     </div>
     <!-- End the section 2 -->
+
+    <!-- The Suggest Topic Modal -->
+    <div class="modal fade" id="suggest-topic-modal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">X</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="row m-0">
+                        <div class="col-12 col-md-6 advice">
+                            <p class="title">
+                                AYUDANOS A<br> ELEGIR EL PRÓXIMO<br> TEMA DE SEMINARIO
+                            </p>
+                            <div class="underline">
+                                <div></div>
+                            </div>
+                            <div class="description">
+                                Sugiere el tema y si es elegido recibe un<br> descuento especial en uno de nuestros<br> programas.
+                            </div>
+                            <div class="pc">
+                                <button type="button" class="live-link">www.DesarrolloGlobal.pe</button>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 input-form">
+                            <p class="title">
+                                COMPLETA EL<br> FORMULARIO
+                            </p>
+                            <div class="input-group">
+                                <input type="text" placeholder="Tu nombre">
+                                <input type="text" placeholder="Tu correo">
+                                <input type="text" placeholder="Tu celular">
+                                <textarea placeholder="Tema sugerido"></textarea>
+                                <button type="button">
+                                    <img src="./imgs/icon/pencil.png" alt="">
+                                    Sugerir Tema
+                                </button>
+                            </div>
+                            <p class="policy">
+                                <img src="./imgs/icon/check-circle.svg" alt=""> Acepta Politica de <span>Privacidad de
+                                    Datos</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

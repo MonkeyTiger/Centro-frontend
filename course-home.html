@@ -20,7 +20,7 @@
             <button type="button" class="live"><img src="./imgs/icon/dot.png" alt="" />En vivo</button>
         </div>
         <div class="links">
-            <button type="button" class="share">Compartir en</button>
+            <button type="button" class="share" data-toggle="modal" data-target="#social-modal">Compartir en</button>
             <ul>
                 <li>
                     <a href="#"><img src="/imgs/icon/link.svg" alt=""></a>
@@ -46,11 +46,211 @@
 
     <div class="content">
         <div class="video-container">
-            <div class="stage"></div>
-            <div class="description"></div>
+            <div class="stage">
+                <div class="timer">
+                    <p class="title">La transmisión comenzará en:</p>
+                    <div class="timer-content">
+                        <div class="item">
+                            <div class="pie-graph">05</div>
+                            <div class="descr">Días</div>
+                        </div>
+                        <div class="item">
+                            <div class="pie-graph">15</div>
+                            <div class="descr">Horas</div>
+                        </div>
+                        <div class="item">
+                            <div class="pie-graph">40</div>
+                            <div class="descr">Min</div>
+                        </div>
+                        <div class="item">
+                            <div class="pie-graph">55</div>
+                            <div class="descr">Seg</div>
+                        </div>
+                    </div>
+                </div>
+                <img src="./imgs/course-home-preview-video.png" class="bg" alt="">
+            </div>
+            <div class="description">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="title">
+                            Gestión de Bienes Patrimoniales
+                        </div>
+                        <div class="user-info">
+                            <img src="./imgs/avatar/2.png" alt="">
+                            <span>Armando Blas Z.</span>
+                        </div>
+                        <div class="detail-info">
+                            <span>
+                                <img src="./imgs/icon/white-calendar.svg" alt="">
+                                Lunes 12 de octubre
+                            </span>
+                            <span>
+                                <img src="./imgs/icon/white-time.svg" alt="">
+                                7:00 pm
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 d-flex justify-content-end align-items-center">
+                        <button type="button" class="signup" data-toggle="modal" data-target="#signup-modal">
+                            <img src="./imgs/icon/pencil.png" alt="">
+                            Inscribirme
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="chat-container">
+            <ul class="nav nav-tabs" id="tab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#chatbox" role="tab" aria-controls="home" aria-selected="true">Chat</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#descriptionbox" role="tab" aria-controls="profile" aria-selected="false">Descripción</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="tabContent">
+                <div class="tab-pane fade show active" id="chatbox" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="history">
+                        <div class="chat-item">
+                            <div class="avatar">
+                                <img src="./imgs/avatar/5.png" alt="">
+                            </div>
+                            <div class="chat-content">
+                                <p>I’m going to San Francisco and I’m booking an Airbnb. Would you like to come?</p>
+                                <p class="history-time">ahora</p>
+                            </div>
+                        </div>
+                        <div class="chat-item">
+                            <div class="avatar">
+                                <img src="./imgs/avatar/5.png" alt="">
+                            </div>
+                            <div class="chat-content">
+                                <p>I’m going to San Francisco and I’m booking an Airbnb. Would you like to come?</p>
+                                <p class="history-time">ahora</p>
+                            </div>
+                        </div>
+                        <div class="chat-item">
+                            <div class="avatar">
+                                <img src="./imgs/avatar/5.png" alt="">
+                            </div>
+                            <div class="chat-content">
+                                <p>I’m going to San Francisco and I’m booking an Airbnb. Would you like to come?</p>
+                                <p class="history-time">ahora</p>
+                            </div>
+                        </div>
+                        <div class="chat-item">
+                            <div class="avatar">
+                                <img src="./imgs/avatar/5.png" alt="">
+                            </div>
+                            <div class="chat-content">
+                                <p>I’m going to San Francisco and I’m booking an Airbnb. Would you like to come?</p>
+                                <p class="history-time">ahora</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-inputbox">
+                        <div class="input-box">
+                            <button type="button" class="emoticon">
+                                <img src="./imgs/icon/smile.svg" alt="">
+                            </button>
+                            <input type="text" placeholder="Escribe tu mensaje aquí">
+                            <div>
+                                <button type="button" class="screen">
+                                    <img src="./imgs/icon/camera.svg" alt="">
+                                </button>
+                                <button type="button" class="voice-call">
+                                    <img src="./imgs/icon/microphone.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="descriptionbox" role="tabpanel" aria-labelledby="profile-tab">
+                    <p class="topic">Seminario en vivo</p>
+                    <p class="topic-title">Gestión de Bienes Patrimoniales en la Nueva</p>
+                    <div class="user-info">
+                        <p class="title">Sobre el docente</p>
+                        <p class="avatar"><img src="./imgs/avatar/4.png" alt=""></p>
+                        <p class="name">Armando Blas Z.</p>
+                        <p class="description">
+                            Especialista en Gestión Pública y Administración con incidencia en Planeamiento, Control de Gestión y Dirección Estratégica de Proyectos, Tecnologías de Información. Relevante experiencia en Planificación, Logística integral, Control
+                        </p>
+                    </div>
 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div class="modal fade" id="signup-modal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">X</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <p class="title">REGÍSTRA TUS DATOS</p>
+                    <div class="underline">
+                        <div></div>
+                    </div>
+                    <p class="description">
+                        Registrata tus datos y te enviaremos un<br> mensaje para recordarte el seminario.
+                    </p>
+                    <div class="input-group">
+                        <input type="text" placeholder="Tu nombre">
+                        <input type="text" placeholder="Tu correo">
+                        <input type="text" placeholder="Tu celular">
+                        <button type="button">
+                            <img src="./imgs/icon/pencil.png" alt="">
+                            Inscribirme
+                        </button>
+                    </div>
+                    <p class="policy">
+                        <img src="./imgs/icon/check-circle.svg" alt=""> Acepta Politica de <span>Privacidad de
+                            Datos</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Social link Modal -->
+    <div class="modal fade" id="social-modal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">X</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <p class="title">Comparte en tu Redes Sociales</p>
+                    <button class="outline-black">
+                        <img src="./imgs/icon/link-lg.svg" alt="">
+                        copiar enlace
+                    </button>
+                    <button class="outline-dark">
+                        <img src="./imgs/icon/facebook-lg.svg" alt="">
+                        compartir en Facebook
+                    </button>
+                    <button class="outline-success">
+                        <img src="./imgs/icon/whatsapp-lg.svg" alt="">
+                        compartir en Wassap
+                    </button>
+                    <button class="outline-info">
+                        <img src="./imgs/icon/red-twitter-lg.svg" alt="">
+                        compartir en Twitter
+                    </button>
+                    <button class="outline-danger">
+                        <img src="./imgs/icon/blue-twitter-lg.svg" alt="">
+                        compartir en Twitter
+                    </button>
+                </div>
+            </div>
         </div>
     </div>
 </body>
