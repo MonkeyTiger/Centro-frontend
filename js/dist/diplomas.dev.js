@@ -60,6 +60,19 @@ $(document).ready(function (e) {
       }
     }
   });
+  $(".search-icon").click(function () {
+    $(".search-input-box").toggleClass('d-none');
+    $(".search-input-box input").focus();
+  });
+  $(".search-input-box input").keypress(function (e) {
+    if (e.keyCode === 13) {
+      $(".search-input-box").addClass('d-none');
+      $(".search-input-box input").val('');
+    }
+  }); // $("body").click(function(e) {
+  //     $(".search-input-box").addClass("d-none");
+  // });
+
   $(".toggleMenu").click(function (e) {
     $(".header_right,body,.pageOverlay").addClass("active");
   });

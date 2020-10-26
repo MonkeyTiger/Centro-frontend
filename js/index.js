@@ -17,7 +17,7 @@ $(document).ready(function(e) {
         margin: 0,
         nav: true,
         items: 1,
-        navText: ["<img src='images/testimonial_arrow_left.svg' alt=''>", "<img src='images/testimonial_arrow_right.svg' alt=''>"]
+        navText: ["<img src='./imgs/icon/testimonial_arrow_left.svg' alt=''>", "<img src='./imgs/icon/testimonial_arrow_right.svg' alt=''>"]
     });
     $(".faq_title").click(function(e) {
         $(".faq_list li").removeClass("active");
@@ -57,6 +57,23 @@ $(document).ready(function(e) {
             }
         }
     });
+
+    $(".search-icon").click(function() {
+        $(".search-input-box").toggleClass('d-none');
+        $(".search-input-box input").focus();
+    });
+
+    $(".search-input-box input").keypress(function(e) {
+        if (e.keyCode === 13) {
+            $(".search-input-box").addClass('d-none');
+            $(".search-input-box input").val('');
+        }
+    });
+
+    // $("body").click(function(e) {
+    //     $(".search-input-box").addClass("d-none");
+    // });
+
     $(".toggleMenu").click(function(e) {
         $(".header_right,body,.pageOverlay").addClass("active");
     });

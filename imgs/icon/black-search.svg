@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35">
+  <g id="Group_3605" data-name="Group 3605" transform="translate(-1227 -24)">
+    <g id="Ellipse_406" data-name="Ellipse 406" transform="translate(1227 24)" fill="#fff" stroke="#060606" stroke-width="1">
+      <circle cx="17.5" cy="17.5" r="17.5" stroke="none"/>
+      <circle cx="17.5" cy="17.5" r="17" fill="none"/>
+    </g>
+    <path id="buscar" d="M2.56,2.9A8.755,8.755,0,0,1,16.407,13.339l3.949,3.949A2.372,2.372,0,1,1,17,20.643l-3.932-3.932A8.756,8.756,0,0,1,2.56,2.9ZM4.11,13.733a6.563,6.563,0,1,0,0-9.281A6.52,6.52,0,0,0,4.11,13.733Z" transform="translate(1234.466 30.662)"/>
+  </g>
+</svg>

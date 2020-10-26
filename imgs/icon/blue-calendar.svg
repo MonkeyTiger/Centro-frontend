@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="33" height="34" viewBox="0 0 33 34">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="33" height="34" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Icon_Calendar" data-name="Icon Calendar" clip-path="url(#clip-path)">
+    <rect id="Rectangle_557" data-name="Rectangle 557" width="33" height="33" transform="translate(0 0)" fill="none"/>
+    <path id="Path_149" data-name="Path 149" d="M4.2,10.5V29.387H29.387V10.5Zm23.09-6.3h4.2a1.983,1.983,0,0,1,2.1,2.1V31.486a1.983,1.983,0,0,1-2.1,2.1H2.1a1.983,1.983,0,0,1-2.1-2.1V6.3A1.983,1.983,0,0,1,2.1,4.2H6.3V2.1A1.983,1.983,0,0,1,8.4,0a1.983,1.983,0,0,1,2.1,2.1V4.2H23.09V2.1a2.1,2.1,0,0,1,4.2,0Zm-2.1,20.991h-4.2v-4.2h4.2Zm-6.3,0h-4.2v-4.2h4.2Zm6.3-6.3h-4.2v-4.2h4.2Zm-6.3,0h-4.2v-4.2h4.2Zm-6.3,6.3H8.4v-4.2h4.2Z" fill="#2a50e8" fill-rule="evenodd"/>
+  </g>
+</svg>
