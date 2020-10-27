@@ -1,5 +1,17 @@
 @import "./variable.scss";
 body {
+    a[data-toggle="collapse"] .up{
+        display: inline;
+    }
+    a[data-toggle="collapse"] .down{
+        display: none;
+    }
+    a[data-toggle="collapse"].collapsed .up{
+        display: none;
+    }
+    a[data-toggle="collapse"].collapsed .down{
+        display: inline;
+    }
      ::-webkit-scrollbar {
         width: 5px;
     }
@@ -30,6 +42,9 @@ body {
     }
     .badge-danger {
         background: #FF0101;
+    }
+    button, a {
+        cursor: pointer;
     }
     button:focus,
     textarea:focus,

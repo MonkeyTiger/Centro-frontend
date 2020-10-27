@@ -35,6 +35,10 @@ body .badge-danger {
   background: #FF0101;
 }
 
+body button:hover {
+  cursor: pointer;
+}
+
 body button:focus,
 body textarea:focus,
 body input:focus {

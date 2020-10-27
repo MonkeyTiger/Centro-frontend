@@ -863,6 +863,9 @@ body {
             .item {
               display: flex;
               margin-bottom: 59px;
+              .copy {
+                cursor: pointer;
+              }
               .avatar {
 
               }

@@ -34,4 +34,8 @@ $(document).ready(function () {
     $("#sidebar").removeClass("active");
     $("#social-modal").modal("show");
   });
+
+  $('.broadcast').click(function () {
+    location.href = "./course-home.html";
+  });
 });

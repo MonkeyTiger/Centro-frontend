@@ -4,6 +4,22 @@ body {
   /* H    andle on hover */
 }
 
+body a[data-toggle="collapse"] .up {
+  display: inline;
+}
+
+body a[data-toggle="collapse"] .down {
+  display: none;
+}
+
+body a[data-toggle="collapse"].collapsed .up {
+  display: none;
+}
+
+body a[data-toggle="collapse"].collapsed .down {
+  display: inline;
+}
+
 body ::-webkit-scrollbar {
   width: 5px;
 }
@@ -33,6 +49,10 @@ body .badge {
 
 body .badge-danger {
   background: #FF0101;
+}
+
+body button, body a {
+  cursor: pointer;
 }
 
 body button:focus,

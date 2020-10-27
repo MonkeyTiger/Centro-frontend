@@ -4,6 +4,22 @@ body {
   /* H    andle on hover */
 }
 
+body a[data-toggle="collapse"] .up {
+  display: inline;
+}
+
+body a[data-toggle="collapse"] .down {
+  display: none;
+}
+
+body a[data-toggle="collapse"].collapsed .up {
+  display: none;
+}
+
+body a[data-toggle="collapse"].collapsed .down {
+  display: inline;
+}
+
 body ::-webkit-scrollbar {
   width: 5px;
 }
@@ -33,6 +49,10 @@ body .badge {
 
 body .badge-danger {
   background: #FF0101;
+}
+
+body button, body a {
+  cursor: pointer;
 }
 
 body button:focus,
@@ -902,10 +922,6 @@ body .main-content .left .section-4 .content .sub-section-2 .descr ul li {
   letter-spacing: -1px;
 }
 
-body .main-content .left .section-5 .title {
-  margin-top: 60px;
-}
-
 body .main-content .left .section-5 .content {
   padding: 42px 54px 32px;
   display: -webkit-box;
@@ -1244,6 +1260,10 @@ body .main-content .left .section-8 .content .sub-section-2 .item .post .tip {
 
 body .main-content .left .section-8 .content .sub-section-3 {
   padding: 56px 72px 0 56px;
+}
+
+body .main-content .left .section-8 .content .sub-section-3 .copy {
+  cursor: pointer;
 }
 
 body .main-content .left .section-8 .content .sub-section-3 .item {

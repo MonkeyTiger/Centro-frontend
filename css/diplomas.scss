@@ -691,9 +691,6 @@ body {
         }
       }
       .section-5 {
-        .title {
-          margin-top: 60px;
-        }
         .content {
           padding: 42px 54px 32px;
           display: flex;
@@ -1001,6 +998,9 @@ body {
             }
           }
           .sub-section-3 {
+            .copy {
+              cursor: pointer;
+            }
             padding: 56px 72px 0 56px;
             .item {
               display: flex;

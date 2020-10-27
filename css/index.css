@@ -303,7 +303,7 @@ input:focus {
 }
 
 header.active .btn-white {
-    color: #2A50E8!important;
+    color: #2A50E8;
 }
 
 .btn-white {
@@ -317,7 +317,7 @@ header.active .btn-white {
     padding: 11px 30px 9px;
 }
 
-.btn-white:hover {
+header.active.btn-white:hover {
     background: #eee;
 }
 
@@ -710,14 +710,31 @@ header.active .btn-white {
 .more_info {
     margin-top: 38.5px;
 }
+.more_info:hover .hover {
+    display: inline;
+}
+
+.more_info:hover .normal {
+    display: none;
+}
 
 .more_info .hover {
     display: none;
 }
 
+.btn-white:hover {
+    color: #FFF!important;
+    background: #2A50E8;
+}
+
 .btn-blue {
     color: #2A50E8 !important;
     font-size: 20px;
+}
+
+.btn-blue:hover {
+    color: white!important;
+    background: #2A50E8;
 }
 
 .more_info .btn-blue {
