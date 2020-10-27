@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="23.72" height="23.72" viewBox="0 0 23.72 23.72">
+  <g id="Group_3567" data-name="Group 3567" transform="translate(-163.043 -1390.043)">
+    <g id="Ellipse_206" data-name="Ellipse 206" transform="translate(163.043 1390.043)" fill="#2699fb" stroke="#2699fb" stroke-width="2">
+      <circle cx="11.86" cy="11.86" r="11.86" stroke="none"/>
+      <circle cx="11.86" cy="11.86" r="10.86" fill="none"/>
+    </g>
+    <path id="Checkbox" d="M4.676,8.133,0,3.456l.949-.949,3.727,3.66L10.844,0l.949.949Z" transform="translate(169.143 1398.176)" fill="#fff" stroke="#fff" stroke-width="1"/>
+  </g>
+</svg>

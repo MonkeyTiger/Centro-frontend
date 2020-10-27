@@ -10,6 +10,14 @@ $(document).ready(function () {
     }
   });
 
+  $("#toggle-chat").on('click', function () {
+    $('.chat-container').addClass('active');
+  });
+
+  $(".close-chatbox").on("click", function () {
+    $('.chat-container').removeClass('active');
+  });
+
   $('#dismiss, .overlay').on('click', function () {
     $('#sidebar').removeClass('active');
     $("body").css("overflow", "inherit");

@@ -53,6 +53,7 @@ body .modal .modal-dialog .modal-content .modal-header {
 }
 
 body .modal .modal-dialog .modal-content .modal-header .close {
+  z-index: 1000;
   padding: 0;
   width: 42px;
   height: 42px;
@@ -112,6 +113,14 @@ body header {
   padding: 0 108px;
   position: fixed;
   z-index: 100;
+}
+
+body header .menu-button {
+  display: none;
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 body header .menu ul {
@@ -188,22 +197,16 @@ body .banner {
   width: 100%;
   height: 550px !important;
   background: #0023B0;
+  background-image: url("../imgs/banner.png");
+  background-size: cover;
+  background-position: right;
   position: relative;
   padding: 108px 0 0 105px;
   margin-top: 80px;
 }
 
-body .banner .banner-bg {
-  position: absolute;
-  width: 100%;
-  z-index: 0;
-  height: 100%;
-  top: 0;
-  left: 0;
-}
-
 body .banner .heading {
-  width: 700px;
+  max-width: 700px;
   position: absolute;
   z-index: 10;
 }
@@ -277,13 +280,13 @@ body .section-1 .user-cards {
 }
 
 body .section-1 .user-cards .user-card {
-  width: 420px;
+  width: 400px;
   background: white;
   border: 2px solid #DBDBDB;
   border-radius: 9px;
   -webkit-box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.25);
           box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.25);
-  margin-right: 22px;
+  margin: 20px;
 }
 
 body .section-1 .user-cards .user-card .header {
@@ -465,7 +468,7 @@ body .section-2 .broadcasts .broadcast .body {
 
 body .section-2 .broadcasts .broadcast .footer {
   width: 100%;
-  height: 202px;
+  min-height: 202px;
   padding: 33px 28px;
 }
 
@@ -540,6 +543,8 @@ body .section-2 .comment {
 
 #suggest-topic-modal .modal-dialog {
   max-width: 1493px;
+  width: calc(100% - 50px);
+  margin: 1.75rem auto !important;
 }
 
 #suggest-topic-modal .modal-dialog .modal-body {
@@ -586,16 +591,25 @@ body .section-2 .comment {
 }
 
 #suggest-topic-modal .modal-dialog .modal-body .advice .pc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
-  height: 509px;
-  background: url("../imgs/pc.png");
   position: relative;
 }
 
+#suggest-topic-modal .modal-dialog .modal-body .advice .pc img {
+  width: 100%;
+}
+
 #suggest-topic-modal .modal-dialog .modal-body .advice .pc .live-link {
-  position: absolute;
   bottom: 0;
-  width: 434px;
+  max-width: 434px;
+  width: 100%;
   height: 70px;
   border-radius: 35px;
   border: 2px solid white;
@@ -700,10 +714,276 @@ body .section-2 .comment {
   color: #2A50E8 !important;
 }
 
-@media (max-width: 1400px) {
-  .section-2 {
-    padding-left: 10px !important;
-    padding-right: 10px !important;
+@media (max-width: 1600px) {
+  body header {
+    padding: 20px !important;
   }
+}
+
+@media (max-width: 1440px) {
+  body header .menu, body header .notification {
+    display: none;
+  }
+  body header .menu-button {
+    display: inline;
+  }
+  body .section-1 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  body .section-1 .user-cards {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  body .section-2 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .banner {
+    padding-left: 20px !important;
+    padding-right: 50px !important;
+  }
+  .section-1 .title, .section-2 .title {
+    font-size: 20px !important;
+  }
+  .modal .advice .title {
+    font-size: 30px !important;
+  }
+  .modal .advice .live-link {
+    font-size: 22px !important;
+  }
+  .modal .input-form {
+    padding: 20px !important;
+  }
+  .modal .input-form .input-group {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+@media (max-width: 600px) {
+  body header {
+    padding: 0 20px !important;
+  }
+  body header .logo img {
+    width: 220px;
+  }
+  body .banner {
+    background-position: 720px 0;
+    padding-top: 50px;
+    padding-bottom: 20px !important;
+  }
+  body .banner .left .content {
+    margin-bottom: 20px;
+  }
+  body .banner .left .content .heading {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  body .banner .left .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  body .banner .left .footer .certification {
+    margin-bottom: 20px;
+  }
+  body .banner .left .footer button {
+    width: 100%;
+  }
+  body .banner .right {
+    padding: 20px !important;
+  }
+  body .section-1 {
+    padding: 30px 20px;
+  }
+  body .section-1 .title {
+    margin-bottom: 20px;
+  }
+  body .section-1 .user-cards {
+    margin: 0 !important;
+  }
+  body .section-1 .user-cards .user-card {
+    width: 100%;
+    margin: 20px 0 !important;
+  }
+}
+
+#sidebar.active {
+  margin-left: 0 !important;
+}
+
+#sidebar {
+  padding: 70px 0;
+  text-align: center;
+  background: white;
+  width: 100%;
+  height: 100vh;
+  margin-left: 100%;
+  position: fixed;
+  top: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  left: 0;
+  z-index: 9999;
+}
+
+#sidebar .sidebar-header {
+  top: 100px;
+}
+
+#sidebar .sidebar-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+}
+
+#sidebar .sidebar-body * {
+  color: #2A50E8;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Montserrat";
+}
+
+#sidebar .sidebar-body ul {
+  padding-left: 0;
+  width: 100%;
+  max-width: 500px;
+}
+
+#sidebar .sidebar-body ul li {
+  list-style-type: none;
+  height: 45px;
+  margin-bottom: 5px;
+}
+
+#sidebar .sidebar-body ul li a {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 2px solid #2A50E8;
+  border-radius: 12px;
+  text-decoration: none;
+}
+
+#sidebar .sidebar-body ul li a:hover {
+  background: #2A50E8;
+  color: white;
+}
+
+#sidebar .sidebar-body ul li .dropdown-menu {
+  border-radius: 12px;
+  padding: 20px;
+  width: calc(100% - 40px);
+  border: 2px solid #2A50E8;
+}
+
+#sidebar .sidebar-body ul li .dropdown-menu li a {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-left: 70px;
+}
+
+#sidebar .sidebar-body ul li .dropdown-menu li a img {
+  margin-right: 30px;
+}
+
+#sidebar .sidebar-body .auth {
+  width: 100%;
+  max-width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#sidebar .sidebar-body .auth button {
+  width: 48%;
+  height: 70px;
+  background: white;
+  color: #2A50E8;
+  border: 2px solid #2A50E8;
+  border-radius: 12px;
+}
+
+#sidebar .sidebar-body .notification {
+  width: 100%;
+  max-width: 500px;
+  margin-top: 20px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#sidebar .sidebar-body .notification div {
+  width: 30%;
+  height: 70px;
+  border-radius: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid #2A50E8;
+}
+
+#sidebar .sidebar-body .notification div a {
+  position: relative;
+}
+
+#sidebar .sidebar-body .notification div a .badge {
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  position: absolute;
+  top: 0;
+  right: -5px;
+}
+
+#dismiss {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+#dismiss img {
+  width: 100%;
+  height: 100%;
 }
 /*# sourceMappingURL=course.css.map */

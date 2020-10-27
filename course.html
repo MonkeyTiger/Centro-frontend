@@ -11,9 +11,90 @@
     <script src="./js/jquery.min.js" type="text/javascript"></script>
     <script src="./js/bootstrap.min.js" type="text/javascript"></script>
     <script src="./js/popper.min.js" type="text/javascript"></script>
+    <script src="./js/course.js" type="text/javascript"></script>
 </head>
 
 <body>
+    <nav id="sidebar">
+        <div id="dismiss">
+            <img src="./imgs/back.png" alt="">
+        </div>
+        <div class="sidebar-header">
+            <img src="./imgs/black-logo.svg" alt="">
+        </div>
+        <div class="sidebar-body">
+            <ul>
+                <li><a href="#">Comunidad</a></li>
+                <li>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Programas</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#">
+                                <img src="./imgs/icon/blue-book.svg" class="normal" alt="">
+                                Cursos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./imgs/icon/blue-card.svg" class="normal" alt="">
+                                Diplomas
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="#">
+                                <img src="./imgs/icon/blue-school.svg" class="normal" alt="">
+                                Diplomados
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./imgs/icon/blue-subscription.svg" class="normal" alt="">
+                                Suscripcion
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./imgs/icon/blue-house.svg" class="normal" alt="">
+                                In House</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./imgs/icon/blue-tv.svg" class="normal" alt="">
+                                Seminarios
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Membresia</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">TV</a></li>
+            </ul>
+            <div class="auth">
+                <button class="register">Register</button>
+                <button class="login">Iniciar Sesión</button>
+            </div>
+            <div class="notification">
+                <div>
+                    <a href="#" class="notice-item">
+                        <img src="./imgs/icon/black-comment.svg" class="icon active-hover" alt="">
+                        <span class="badge badge-danger">7</span>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="notice-item">
+                        <img src="./imgs/icon/black-bell.svg" class="icon active-hover" alt="">
+                        <span class="badge badge-danger">3</span>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="notice-item">
+                        <img src="./imgs/icon/black-cart.svg" class="icon active-hover" alt="">
+                        <span class="badge badge-danger">2</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
     <!-- Start the header section -->
     <header>
         <div class="logo">
@@ -46,18 +127,21 @@
                 <button type="button" id="login">Iniciar Sesión</button>
             </div>
         </div>
+        <button class="menu-button">
+            <img src="./imgs/icon/menu-white.png" class="active-normal" alt="">
+        </button>
     </header>
     <!-- End the header section -->
 
     <!-- Start the banner section -->
     <div class="banner">
-        <img src="./imgs/banner.png" class="banner-bg" alt="">
         <div class="heading">
             <p class="title">
                 Seminarios Gratuitos<br> en Gestión Pública
             </p>
             <p class="description">
-                sigue nuestras transmisiones cada semana y aprende<br> de manera gratuita y mejora tus competencias<br> profesionales.
+                sigue nuestras transmisiones cada semana y aprende<br> de manera gratuita y mejora tus competencias<br>
+                profesionales.
             </p>
             <button type="button" id="suggest-topic" data-toggle="modal" data-target="#suggest-topic-modal">
                 <img src="./imgs/icon/pencil.png" alt="" />
@@ -151,7 +235,7 @@
         </div>
         <div class="broadcasts">
             <div class="row m-0">
-                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 px-0">
                     <div class="broadcast dark-blue">
                         <div class="body"></div>
                         <div class="footer">
@@ -175,7 +259,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 px-0">
                     <div class="broadcast green">
                         <div class="body"></div>
                         <div class="footer">
@@ -199,7 +283,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 px-0">
                     <div class="broadcast red">
                         <div class="body"></div>
                         <div class="footer">
@@ -223,7 +307,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 px-0">
                     <div class="broadcast blue">
                         <div class="body"></div>
                         <div class="footer">
@@ -247,7 +331,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 px-0">
                     <div class="broadcast dark-blue">
                         <div class="body"></div>
                         <div class="footer">
@@ -271,7 +355,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 px-0">
                     <div class="broadcast green">
                         <div class="body"></div>
                         <div class="footer">
@@ -295,7 +379,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 px-0">
                     <div class="broadcast red">
                         <div class="body"></div>
                         <div class="footer">
@@ -319,7 +403,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 px-0">
                     <div class="broadcast blue">
                         <div class="body"></div>
                         <div class="footer">
@@ -368,9 +452,11 @@
                                 <div></div>
                             </div>
                             <div class="description">
-                                Sugiere el tema y si es elegido recibe un<br> descuento especial en uno de nuestros<br> programas.
+                                Sugiere el tema y si es elegido recibe un<br> descuento especial en uno de nuestros<br>
+                                programas.
                             </div>
                             <div class="pc">
+                                <img src="./imgs/pc.png" alt="">
                                 <button type="button" class="live-link">www.DesarrolloGlobal.pe</button>
                             </div>
                         </div>

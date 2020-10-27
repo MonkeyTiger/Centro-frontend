@@ -6,16 +6,17 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/diplomas.css">
+    <link rel="stylesheet" href="./css/cursos.css">
 
     <script src="./js/jquery.min.js" type="text/javascript"></script>
     <script src="./js/popper.min.js" type="text/javascript"></script>
     <script src="./js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="./js/diplomas.js" type="text/javascript"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="./js/cursos.js" type="text/javascript"></script>
 </head>
 
 <body>
-
     <nav id="sidebar">
         <div id="dismiss">
             <img src="./imgs/back.png" alt="">
@@ -98,6 +99,7 @@
     </nav>
 
     <!-- Start the header section -->
+
     <header>
         <div class="logo">
             <img src="./imgs/logo.svg" class="active-normal" alt="">
@@ -183,9 +185,9 @@
     <div class="banner">
         <div class="left">
             <div class="toolbar">
-                <button type="button" class="btn-white">
-                    <img src="./imgs/icon/black-school.svg" alt="">
-                    DIPLOMADO DE ESPECIALIZACIÓN
+                <button type="button" class="btn-primary-outline">
+                    <img src="./imgs/icon/icon_book_blue.svg" alt="">
+                    CURSO
                 </button>
                 <button type="button" class="btn-danger">
                     <img src="./imgs/icon/dot.svg" alt="">
@@ -194,11 +196,11 @@
             </div>
             <div class="content">
                 <div class="heading">
-                    Gestión de las Contrataciones<br>
+                    Gestión de las Contrataciones
                     del Estado y el SE@CE 3.0
                 </div>
                 <div class="description">
-                    A wonderful serenity has taken possession of my entiA wonderful serenity<br> has taken
+                    A wonderful serenity has taken possession of my entiA wonderful serenity has taken
                     possession of my entire soul, like
                     hese sweet mornings of re sou
                 </div>
@@ -215,23 +217,9 @@
                 </button>
             </div>
         </div>
-        <div class="right p-0">
-            <div class="info-form">
-                <p class="title">Solicitar Información</p>
-                <p class="descr">Dejános tus datos y te contactamos<br> para ayudarte</p>
-                <div class="input-group">
-                    <input type="text" placeholder="Nombre">
-                    <input type="text" placeholder="john@gmail.com">
-                    <input type="text" placeholder="Celular de Contacto">
-                </div>
-                <button type="button">Solicitar Información</button>
-                <p class="policy">
-                    <input type="checkbox">
-                    <span class="underline">acepto</span>&nbsp; privacidad de <span class="underline">datos</span>
-                </p>
-            </div>
+        <div class="right d-flex p-0">
+            <video width="100%" controls src="./video/1.mp4"></video>
         </div>
-    </div>
     </div>
     <!-- End the banner section -->
     <div class="main-content">
@@ -266,7 +254,12 @@
                 </a>
             </div>
             <div class="article section-1">
-                <p class="title">Presentación</p>
+                <p class="title">
+                    <span>
+                        <img src="./imgs/icon/black-list.svg" class="menu" alt="">
+                        Presentación
+                    </span>
+                </p>
                 <div class="content">
                     A wonderful serenity has taken possession of my entiA wonderful serenity has taken possession of
                     my entire soul, like
@@ -274,28 +267,32 @@
                 </div>
             </div>
             <div class="article section-2">
-                <p class="title">Cursos Contenido en el Diploma</p>
+                <p class="title">
+                    <span>
+                        <img src="./imgs/icon/black-list.svg" class="menu" alt="">
+                        Contenido Temático
+                    </span>
+                </p>
                 <div class="content">
                     <div id="accordionExample" class="accordion shadow">
                         <div class="card">
-                            <div id="saif" class="card-header">
+                            <div id="1" class="card-header">
                                 <h2 class="mb-0">
                                     <div>
-                                        <button type="button" data-toggle="collapse" data-target="#saif-card"
-                                            aria-expanded="true" aria-controls="saif-card"
+                                        <button type="button" data-toggle="collapse" data-target="#session-1"
+                                            aria-expanded="true" aria-controls="session-1"
                                             class="btn btn-link text-dark font-weight-bold text-uppercase collapsible-link">
                                             <img src="./imgs/icon/md-arrow-down.svg" class="normal" alt="">
                                             <img src="./imgs/icon/md-arrow-up.svg" class="active" alt="">
                                         </button>
                                         <span>
-                                            CONTABILIDAD GUBERNAMENTAL Y OPERACIONES<br>
-                                            EN EL SIAF RP
+                                            SESIÓN 01
                                         </span>
                                     </div>
-                                    <img src="./imgs/icon/saif.svg" alt="">
+                                    <span class="time">1 Sesión de 2h 30m</span>
                                 </h2>
                             </div>
-                            <div id="saif-card" aria-labelledby="saif" data-parent="#accordionExample"
+                            <div id="session-1" aria-labelledby="1" data-parent="#accordionExample"
                                 class="collapse show">
                                 <div class="card-body">
                                     <div class="part">
@@ -338,24 +335,23 @@
                             </div>
                         </div>
                         <div class="card">
-                            <div id="siga" class="card-header">
+                            <div id="2" class="card-header">
                                 <h2 class="mb-0">
                                     <div>
-                                        <button type="button" data-toggle="collapse" data-target="#siga-card"
-                                            aria-expanded="false" aria-controls="siga-card"
+                                        <button type="button" data-toggle="collapse" data-target="#session-2"
+                                            aria-expanded="false" aria-controls="session-2"
                                             class="btn btn-link text-dark font-weight-bold text-uppercase collapsible-link">
                                             <img src="./imgs/icon/md-arrow-down.svg" class="normal" alt="">
                                             <img src="./imgs/icon/md-arrow-up.svg" class="active" alt="">
                                         </button>
                                         <span>
-                                            CONTABILIDAD GUBERNAMENTAL Y OPERACIONES<br>
-                                            EN EL SIAF RP
+                                            SESIÓN 02
                                         </span>
                                     </div>
-                                    <img src="./imgs/icon/siga.svg" alt="">
+                                    <span class="time">1 Sesión de 2h 30m</span>
                                 </h2>
                             </div>
-                            <div id="siga-card" aria-labelledby="siga" data-parent="#accordionExample" class="collapse">
+                            <div id="session-2" aria-labelledby="2" data-parent="#accordionExample" class="collapse">
                                 <div class="card-body">
                                     <div class="part">
                                         <p class="title">Sesión 01</p>
@@ -397,25 +393,197 @@
                             </div>
                         </div>
                         <div class="card">
-                            <div id="shake" class="card-header">
+                            <div id="3" class="card-header">
                                 <h2 class="mb-0">
                                     <div>
-                                        <button type="button" data-toggle="collapse" data-target="#shake-card"
-                                            aria-expanded="false" aria-controls="shake-card"
+                                        <button type="button" data-toggle="collapse" data-target="#session-3"
+                                            aria-expanded="false" aria-controls="session-3"
                                             class="btn btn-link text-dark font-weight-bold text-uppercase collapsible-link">
                                             <img src="./imgs/icon/md-arrow-down.svg" class="normal" alt="">
                                             <img src="./imgs/icon/md-arrow-up.svg" class="active" alt="">
                                         </button>
                                         <span>
-                                            CONTABILIDAD GUBERNAMENTAL Y OPERACIONES<br>
-                                            EN EL SIAF RP
+                                            SESIÓN 03
                                         </span>
                                     </div>
-                                    <img src="./imgs/icon/shake.svg" alt="">
+                                    <span class="time">1 Sesión de 2h 30m</span>
                                 </h2>
                             </div>
-                            <div id="shake-card" aria-labelledby="shake" data-parent="#accordionExample"
-                                class="collapse">
+                            <div id="session-3" aria-labelledby="3" data-parent="#accordionExample" class="collapse">
+                                <div class="card-body">
+                                    <div class="part">
+                                        <p class="title">Sesión 01</p>
+                                        <div class="descr">
+                                            <p class="comment">
+                                                <img src="./imgs/icon/blue-circle-check.svg" alt="">
+                                                <span>COMPRAS CORPORATIVAS</span>
+                                            </p>
+                                            <p class="comment">
+                                                <img src="./imgs/icon/blue-circle-check.svg" alt="">
+                                                <span>SUBASTA INVERSA ELECTRÓNICA</span>
+                                            </p>
+                                            <p class="comment">
+                                                <img src="./imgs/icon/blue-circle-check.svg" alt="">
+                                                <span>Generalidades de los Catálogos Electrónicos de Acuerdos
+                                                    Marco</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="part">
+                                        <p class="title">Sesión 02</p>
+                                        <div class="descr">
+                                            <p class="comment">
+                                                <img src="./imgs/icon/blue-circle-check.svg" alt="">
+                                                <span>COMPRAS CORPORATIVAS</span>
+                                            </p>
+                                            <p class="comment">
+                                                <img src="./imgs/icon/blue-circle-check.svg" alt="">
+                                                <span>SUBASTA INVERSA ELECTRÓNICA</span>
+                                            </p>
+                                            <p class="comment">
+                                                <img src="./imgs/icon/blue-circle-check.svg" alt="">
+                                                <span>Generalidades de los Catálogos Electrónicos de Acuerdos
+                                                    Marco</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div id="4" class="card-header">
+                                <h2 class="mb-0">
+                                    <div>
+                                        <button type="button" data-toggle="collapse" data-target="#session-4"
+                                            aria-expanded="false" aria-controls="session-4"
+                                            class="btn btn-link text-dark font-weight-bold text-uppercase collapsible-link">
+                                            <img src="./imgs/icon/md-arrow-down.svg" class="normal" alt="">
+                                            <img src="./imgs/icon/md-arrow-up.svg" class="active" alt="">
+                                        </button>
+                                        <span>
+                                            SESIÓN 04
+                                        </span>
+                                    </div>
+                                    <span class="time">1 Sesión de 2h 30m</span>
+                                </h2>
+                            </div>
+                            <div id="session-4" aria-labelledby="4" data-parent="#accordionExample" class="collapse">
+                                <div class="card-body">
+                                    <div class="part">
+                                        <p class="title">Sesión 01</p>
+                                        <div class="descr">
+                                            <p class="comment">
+                                                <img src="./imgs/icon/blue-circle-check.svg" alt="">
+                                                <span>COMPRAS CORPORATIVAS</span>
+                                            </p>
+                                            <p class="comment">
+                                                <img src="./imgs/icon/blue-circle-check.svg" alt="">
+                                                <span>SUBASTA INVERSA ELECTRÓNICA</span>
+                                            </p>
+                                            <p class="comment">
+                                                <img src="./imgs/icon/blue-circle-check.svg" alt="">
+                                                <span>Generalidades de los Catálogos Electrónicos de Acuerdos
+                                                    Marco</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="part">
+                                        <p class="title">Sesión 02</p>
+                                        <div class="descr">
+                                            <p class="comment">
+                                                <img src="./imgs/icon/blue-circle-check.svg" alt="">
+                                                <span>COMPRAS CORPORATIVAS</span>
+                                            </p>
+                                            <p class="comment">
+                                                <img src="./imgs/icon/blue-circle-check.svg" alt="">
+                                                <span>SUBASTA INVERSA ELECTRÓNICA</span>
+                                            </p>
+                                            <p class="comment">
+                                                <img src="./imgs/icon/blue-circle-check.svg" alt="">
+                                                <span>Generalidades de los Catálogos Electrónicos de Acuerdos
+                                                    Marco</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div id="5" class="card-header">
+                                <h2 class="mb-0">
+                                    <div>
+                                        <button type="button" data-toggle="collapse" data-target="#session-5"
+                                            aria-expanded="false" aria-controls="session-5"
+                                            class="btn btn-link text-dark font-weight-bold text-uppercase collapsible-link">
+                                            <img src="./imgs/icon/md-arrow-down.svg" class="normal" alt="">
+                                            <img src="./imgs/icon/md-arrow-up.svg" class="active" alt="">
+                                        </button>
+                                        <span>
+                                            SESIÓN 05
+                                        </span>
+                                    </div>
+                                    <span class="time">1 Sesión de 2h 30m</span>
+                                </h2>
+                            </div>
+                            <div id="session-5" aria-labelledby="5" data-parent="#accordionExample" class="collapse">
+                                <div class="card-body">
+                                    <div class="part">
+                                        <p class="title">Sesión 01</p>
+                                        <div class="descr">
+                                            <p class="comment">
+                                                <img src="./imgs/icon/blue-circle-check.svg" alt="">
+                                                <span>COMPRAS CORPORATIVAS</span>
+                                            </p>
+                                            <p class="comment">
+                                                <img src="./imgs/icon/blue-circle-check.svg" alt="">
+                                                <span>SUBASTA INVERSA ELECTRÓNICA</span>
+                                            </p>
+                                            <p class="comment">
+                                                <img src="./imgs/icon/blue-circle-check.svg" alt="">
+                                                <span>Generalidades de los Catálogos Electrónicos de Acuerdos
+                                                    Marco</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="part">
+                                        <p class="title">Sesión 02</p>
+                                        <div class="descr">
+                                            <p class="comment">
+                                                <img src="./imgs/icon/blue-circle-check.svg" alt="">
+                                                <span>COMPRAS CORPORATIVAS</span>
+                                            </p>
+                                            <p class="comment">
+                                                <img src="./imgs/icon/blue-circle-check.svg" alt="">
+                                                <span>SUBASTA INVERSA ELECTRÓNICA</span>
+                                            </p>
+                                            <p class="comment">
+                                                <img src="./imgs/icon/blue-circle-check.svg" alt="">
+                                                <span>Generalidades de los Catálogos Electrónicos de Acuerdos
+                                                    Marco</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div id="6" class="card-header">
+                                <h2 class="mb-0">
+                                    <div>
+                                        <button type="button" data-toggle="collapse" data-target="#session-6"
+                                            aria-expanded="false" aria-controls="session-6"
+                                            class="btn btn-link text-dark font-weight-bold text-uppercase collapsible-link">
+                                            <img src="./imgs/icon/md-arrow-down.svg" class="normal" alt="">
+                                            <img src="./imgs/icon/md-arrow-up.svg" class="active" alt="">
+                                        </button>
+                                        <span>
+                                            SESIÓN 06
+                                        </span>
+                                    </div>
+                                    <span class="time">1 Sesión de 2h 30m</span>
+                                </h2>
+                            </div>
+                            <div id="session-6" aria-labelledby="6" data-parent="#accordionExample" class="collapse">
                                 <div class="card-body">
                                     <div class="part">
                                         <p class="title">Sesión 01</p>
@@ -470,43 +638,7 @@
                     </a>
                 </p>
                 <div class="content">
-                    <div class="sub-section sub-section-1">
-                        <div class="avatar">
-                            <img src="./imgs/icon/saif.svg" alt="">
-                        </div>
-                        <div class="table">
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>FECHAS:</th>
-                                        <th>FRECUENCIA:</th>
-                                        <th>HORARIO:</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>02 de Marzo</td>
-                                        <td>Sábado</td>
-                                        <td>9:30 am a 1:30 pm</td>
-                                    </tr>
-                                    <tr>
-                                        <td>09 de Marzo</td>
-                                        <td>Sábado</td>
-                                        <td>9:30 am a 1:30 pm</td>
-                                    </tr>
-                                    <tr>
-                                        <td>16 de Marzo</td>
-                                        <td>Sábado</td>
-                                        <td>9:30 am a 1:30 pm</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
                     <div class="sub-section sub-section-2">
-                        <div class="avatar">
-                            <img src="./imgs/icon/siga.svg" alt="">
-                        </div>
                         <div class="table">
                             <table>
                                 <thead>
@@ -656,78 +788,6 @@
                                 <span class="amount">421.00</span>
                                 <span class="downgrade">S/ 497.00</span>
                             </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="article section-7">
-                <p class="title">
-                    <span>
-                        <img src="./imgs/icon/black-list.svg" class="menu" alt="">
-                        Comienza y capacitate con nosotros
-                    </span>
-                </p>
-                <div class="content">
-                    <div class="row m-0 sub-section-1">
-                        <div class="col-12 col-md-6">
-                            <div class="pc">
-                                <img src="./imgs/pc-1.png" alt="">
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6">
-                            <div class="info row">
-                                <div class="item col-12 col-md-6">
-                                    <div class="avatar">
-                                        <img src="./imgs/icon/icon_clases_en _vivo.svg" alt="">
-                                    </div>
-                                    <div class="name">Clases en vivo</div>
-                                    <div class="description">
-                                        Lleva tus clases en vivo<br>
-                                        desde cualquier lugar.
-                                    </div>
-                                </div>
-                                <div class="item col-12 col-md-6">
-                                    <div class="avatar">
-                                        <img src="./imgs/icon/icon_plataforma_educativa.svg" alt="">
-                                    </div>
-                                    <div class="name">Plataforma Educativa</div>
-                                    <div class="description">
-                                        Grabaciones, evaluaciones,<br> materiales y comunidad.
-                                    </div>
-                                </div>
-                                <div class="item col-12 col-md-6">
-                                    <div class="avatar">
-                                        <img src="./imgs/icon/icon_certificacion_valida.svg" alt="">
-                                    </div>
-                                    <div class="name">Certificación Válida</div>
-                                    <div class="description">
-                                        Para convocatorias a entidades públicas.
-                                    </div>
-                                </div>
-                                <div class="item col-12 col-md-6">
-                                    <div class="avatar">
-                                        <img src="./imgs/icon/icon_soporte.svg" alt="">
-                                    </div>
-                                    <div class="name">Soporte</div>
-                                    <div class="description">
-                                        Nuestro equipo siempre estará<br> disponible.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row m-0 sub-section-2">
-                        <div class="col-12">
-                            <div class="avatar">
-                                <img src="./imgs/delivery.svg" alt="">
-                            </div>
-                            <div class="info">
-                                <p class="title">Envios Gratuitos</p>
-                                <p class="descr">
-                                    Envios de Certificados a<br>
-                                    nivel nacional por Olva Courier.
-                                </p>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -915,25 +975,6 @@
                     </div>
                 </div>
             </div>
-            <div class="article section-9">
-                <p class="title">
-                    <span>
-                        <img src="./imgs/icon/black-list.svg" class="menu" alt="">
-                        Puedes confiar en nosotros
-                    </span>
-                    <a href="#" class="down-arrow">
-                        <img src="./imgs/icon/down-arrow.svg" alt="">
-                    </a>
-                </p>
-                <div class="content">
-                    <img src="./imgs/flag.png" alt="">
-                    <div class="descr">
-                        Tenemos la certificación<br>
-                        ISO 9001-2015 para la relización<br>
-                        de programas virtuales.<br>
-                    </div>
-                </div>
-            </div>
             <div class="article section-10">
                 <p class="title">
                     <span>
@@ -973,21 +1014,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="article section-11">
-                <p class="title">
-                    <span>
-                        <img src="./imgs/icon/black-list.svg" class="menu" alt="">
-                        Comentarios
-                    </span>
-                </p>
-                <div class="content">
-                    <textarea></textarea>
-                    <button class="commit">
-                        <img src="./imgs/icon/black-pencil.svg" alt="">
-                        PUBLICAR COMENTARIO
-                    </button>
                 </div>
             </div>
         </div>

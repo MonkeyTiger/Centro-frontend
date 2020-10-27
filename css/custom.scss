@@ -47,6 +47,7 @@ body {
                     padding: 0;
                     border: none;
                     .close {
+                        z-index: 1000;
                         padding: 0;
                         width: 42px;
                         height: 42px;
