@@ -4,20 +4,20 @@ body {
   /* H    andle on hover */
 }
 
-body a[data-toggle="collapse"] .up {
+body [data-toggle="collapse"] .up {
   display: inline;
 }
 
-body a[data-toggle="collapse"] .down {
+body [data-toggle="collapse"] .down {
   display: none;
 }
 
-body a[data-toggle="collapse"].collapsed .up {
-  display: none;
+body [data-toggle="collapse"].collapsed .up {
+  display: none !important;
 }
 
-body a[data-toggle="collapse"].collapsed .down {
-  display: inline;
+body [data-toggle="collapse"].collapsed .down {
+  display: inline !important;
 }
 
 body ::-webkit-scrollbar {
@@ -361,6 +361,7 @@ body .banner .left .toolbar .btn-danger img {
 }
 
 body .banner .left .content {
+  display: block;
   color: white;
   margin-bottom: 54px;
 }
@@ -550,10 +551,9 @@ body .main-content .left {
 }
 
 body .main-content .left .brief-dashboard {
-  padding: 0 115px 0 45px;
+  padding: 25px 45px;
   position: absolute;
   width: 100%;
-  padding: 25px;
   border-radius: 52px;
   top: 0;
   background: #FFF;
@@ -631,6 +631,7 @@ body .main-content .left .article {
 }
 
 body .main-content .left .article .title {
+  cursor: pointer;
   padding: 0 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -687,9 +688,26 @@ body .main-content .left .section-2 .content #accordionExample .card {
 }
 
 body .main-content .left .section-2 .content #accordionExample .card .card-header {
+  cursor: pointer;
   border-radius: 9px 9px 0 0;
   background: none;
   padding: 15px 81px 18px 32px;
+}
+
+body .main-content .left .section-2 .content #accordionExample .card .card-header [aria-expanded="true"] .normal {
+  display: none;
+}
+
+body .main-content .left .section-2 .content #accordionExample .card .card-header [aria-expanded="true"] .active {
+  display: inline;
+}
+
+body .main-content .left .section-2 .content #accordionExample .card .card-header [aria-expanded="false"] .active {
+  display: inline;
+}
+
+body .main-content .left .section-2 .content #accordionExample .card .card-header [aria-expanded="false"] .active {
+  display: none;
 }
 
 body .main-content .left .section-2 .content #accordionExample .card .card-header h2 {
@@ -715,22 +733,6 @@ body .main-content .left .section-2 .content #accordionExample .card .card-heade
 
 body .main-content .left .section-2 .content #accordionExample .card .card-header h2 > div button {
   margin-right: 28px;
-}
-
-body .main-content .left .section-2 .content #accordionExample .card .card-header h2 > div button[aria-expanded="true"] .normal {
-  display: none;
-}
-
-body .main-content .left .section-2 .content #accordionExample .card .card-header h2 > div button[aria-expanded="true"] .active {
-  display: inline;
-}
-
-body .main-content .left .section-2 .content #accordionExample .card .card-header h2 > div button[aria-expanded="false"] .active {
-  display: inline;
-}
-
-body .main-content .left .section-2 .content #accordionExample .card .card-header h2 > div button[aria-expanded="false"] .active {
-  display: none;
 }
 
 body .main-content .left .section-2 .content #accordionExample .card .card-header h2 > div span {
@@ -1148,6 +1150,7 @@ body .main-content .left .section-8 .content .sub-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  cursor: pointer;
   padding: 53px 20px 30px 60px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -1608,6 +1611,127 @@ body .main-content .right .course-form .footer {
   font-size: 16px;
   font-weight: 600;
   font-family: "Montserrat";
+}
+
+body #login-modal .modal-dialog {
+  max-width: 890px;
+  width: calc(100% - 50px);
+  margin: 1.75rem auto !important;
+}
+
+body #login-modal .modal-dialog .modal-content {
+  border-radius: 12px;
+  border: none;
+}
+
+body #login-modal .modal-dialog .modal-content .modal-body {
+  padding: 0;
+}
+
+body #login-modal .modal-dialog .modal-content .modal-body .div1 {
+  border-radius: 12px 0 0 12px;
+  background: #2A50E8;
+  padding: 44px;
+}
+
+body #login-modal .modal-dialog .modal-content .modal-body .div1 .logo {
+  margin-left: 30px;
+  margin-bottom: 26.5px;
+}
+
+body #login-modal .modal-dialog .modal-content .modal-body .div1 .title {
+  margin-left: 30px;
+  font-size: 35px;
+  font-weight: bold;
+  font-family: "Montserrat";
+  color: white;
+  margin-bottom: 13px;
+}
+
+body #login-modal .modal-dialog .modal-content .modal-body .div1 .pc {
+  width: 100%;
+  position: relative;
+}
+
+body #login-modal .modal-dialog .modal-content .modal-body .div1 .pc img {
+  width: 100%;
+}
+
+body #login-modal .modal-dialog .modal-content .modal-body .div1 .pc .descr {
+  margin-left: 30px;
+  position: absolute;
+  bottom: 0;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Montserrat";
+}
+
+body #login-modal .modal-dialog .modal-content .modal-body .div2 {
+  padding: 31px 46px 27px;
+}
+
+body #login-modal .modal-dialog .modal-content .modal-body .div2 .title {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Raleway";
+  margin-bottom: 21px;
+  text-align: center;
+}
+
+body #login-modal .modal-dialog .modal-content .modal-body .div2 button {
+  width: 100%;
+  height: 56px;
+  margin-bottom: 7px;
+  border-radius: 38px;
+  position: relative;
+  padding-left: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Montserrat";
+}
+
+body #login-modal .modal-dialog .modal-content .modal-body .div2 button img {
+  margin-right: 18px;
+  position: absolute;
+  top: 26px;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  left: 30px;
+}
+
+body #login-modal .modal-dialog .modal-content .modal-body .div2 .descr {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Raleway";
+  text-align: center;
+  margin: 13px 0 23px;
+  line-height: 24px;
+}
+
+body #login-modal .modal-dialog .modal-content .modal-body .div2 .outline-dark {
+  background: white;
+  color: #041956;
+  border: 2px solid #041956;
+}
+
+body #login-modal .modal-dialog .modal-content .modal-body .div2 .outline-info {
+  background: white;
+  color: #006DB2;
+  border: 2px solid #006DB2;
+}
+
+body #login-modal .modal-dialog .modal-content .modal-body .div2 .outline-danger {
+  background: white;
+  color: #CB1566;
+  border: 2px solid #CB1566;
+}
+
+body #login-modal .modal-dialog .modal-content .modal-body .div2 .outline-primary {
+  background: white;
+  color: #2A50E8;
+  border: 2px solid #2A50E8;
+  font-size: 20px;
 }
 
 @media (max-width: 1600px) {

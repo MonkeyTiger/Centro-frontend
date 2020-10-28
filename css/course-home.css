@@ -4,6 +4,22 @@ body {
   /* H    andle on hover */
 }
 
+body a[data-toggle="collapse"] .up {
+  display: inline;
+}
+
+body a[data-toggle="collapse"] .down {
+  display: none;
+}
+
+body a[data-toggle="collapse"].collapsed .up {
+  display: none;
+}
+
+body a[data-toggle="collapse"].collapsed .down {
+  display: inline;
+}
+
 body ::-webkit-scrollbar {
   width: 5px;
 }
@@ -35,7 +51,7 @@ body .badge-danger {
   background: #FF0101;
 }
 
-body button:hover {
+body button, body a {
   cursor: pointer;
 }
 
@@ -517,7 +533,7 @@ body .content .chat-container .tab-content#tabContent #chatbox .history .chat-it
 body .content .chat-container .tab-content#tabContent #chatbox .history .chat-item .chat-content p:first-child {
   margin-bottom: 6px;
   font-size: 15px;
-  font-family: "SF Pro Text";
+  font-family: "Montserrat";
   line-height: 22px;
 }
 
@@ -525,7 +541,7 @@ body .content .chat-container .tab-content#tabContent #chatbox .history .chat-it
   color: #CCCCCC;
   margin-bottom: 0;
   font-size: 13px;
-  font-family: "SF Pro Text";
+  font-family: "Montserrat";
   line-height: 18px;
 }
 
@@ -611,7 +627,7 @@ body .content .chat-container .tab-content#tabContent #chatbox .chat-inputbox .i
 body .content .chat-container .tab-content#tabContent #descriptionbox {
   color: white;
   height: calc(100% - 62px);
-  padding: 42px 0 0 40px;
+  padding: 42px 0 10px 40px;
 }
 
 body .content .chat-container .tab-content#tabContent #descriptionbox .topic {
@@ -836,6 +852,84 @@ body #social-modal .modal-dialog .modal-body .outline-danger {
   background: white;
   color: #B50E86;
   border: 2px solid #B50E86;
+}
+
+body #chat-modal .modal-dialog {
+  max-width: 410px;
+  width: calc(100% - 50px);
+  margin: 1.75rem auto !important;
+}
+
+body #chat-modal .modal-dialog .modal-content {
+  border-radius: 12px;
+  border: none;
+}
+
+body #chat-modal .modal-dialog .modal-content .modal-body {
+  padding: 31px 25px 27px;
+}
+
+body #chat-modal .modal-dialog .modal-content .modal-body .title {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Raleway";
+  margin-bottom: 21px;
+  text-align: center;
+}
+
+body #chat-modal .modal-dialog .modal-content .modal-body button {
+  width: 100%;
+  height: 56px;
+  margin-bottom: 7px;
+  border-radius: 38px;
+  position: relative;
+  padding-left: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Montserrat";
+}
+
+body #chat-modal .modal-dialog .modal-content .modal-body button img {
+  margin-right: 18px;
+  position: absolute;
+  top: 26px;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  left: 30px;
+}
+
+body #chat-modal .modal-dialog .modal-content .modal-body .descr {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Raleway";
+  text-align: center;
+  margin: 13px 0 23px;
+  line-height: 24px;
+}
+
+body #chat-modal .modal-dialog .modal-content .modal-body .outline-dark {
+  background: white;
+  color: #041956;
+  border: 2px solid #041956;
+}
+
+body #chat-modal .modal-dialog .modal-content .modal-body .outline-info {
+  background: white;
+  color: #006DB2;
+  border: 2px solid #006DB2;
+}
+
+body #chat-modal .modal-dialog .modal-content .modal-body .outline-danger {
+  background: white;
+  color: #CB1566;
+  border: 2px solid #CB1566;
+}
+
+body #chat-modal .modal-dialog .modal-content .modal-body .outline-primary {
+  background: white;
+  color: #2A50E8;
+  border: 2px solid #2A50E8;
+  font-size: 20px;
 }
 
 #sidebar.active {
@@ -1153,6 +1247,9 @@ body #social-modal .modal-dialog .modal-body .outline-danger {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  #chat-modal button {
+    font-size: 14px !important;
   }
 }
 /*# sourceMappingURL=course-home.css.map */

@@ -38,4 +38,8 @@ $(document).ready(function () {
   $('.broadcast').click(function () {
     location.href = "./course-home.html";
   });
+
+  $("#home-tab").click(function () {
+    $("#chat-modal").modal("show");
+  });
 });

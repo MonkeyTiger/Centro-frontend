@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/cursos.css">
+    <link href="./css/fonts/font.css" type="text/css" rel="stylesheet">
 
     <script src="./js/jquery.min.js" type="text/javascript"></script>
     <script src="./js/popper.min.js" type="text/javascript"></script>
@@ -171,7 +172,7 @@
             </a>
             <div class="auth">
                 <a href="#" id="register">Registro</a>
-                <button type="button" id="login">Iniciar Sesión</button>
+                <button type="button" id="login" data-toggle="modal" data-target="#login-modal">Iniciar Sesión</button>
             </div>
         </div>
         <button class="menu-button">
@@ -277,10 +278,10 @@
                     <div id="accordionExample" class="accordion shadow">
                         <div class="card">
                             <div id="1" class="card-header">
-                                <h2 class="mb-0">
+                                <h2 class="mb-0" data-toggle="collapse" data-target="#session-1" aria-expanded="false"
+                                    aria-controls="session-1">
                                     <div>
-                                        <button type="button" data-toggle="collapse" data-target="#session-1"
-                                            aria-expanded="true" aria-controls="session-1"
+                                        <button type="button"
                                             class="btn btn-link text-dark font-weight-bold text-uppercase collapsible-link">
                                             <img src="./imgs/icon/md-arrow-down.svg" class="normal" alt="">
                                             <img src="./imgs/icon/md-arrow-up.svg" class="active" alt="">
@@ -292,8 +293,7 @@
                                     <span class="time">1 Sesión de 2h 30m</span>
                                 </h2>
                             </div>
-                            <div id="session-1" aria-labelledby="1" data-parent="#accordionExample"
-                                class="collapse show">
+                            <div id="session-1" aria-labelledby="1" data-parent="#accordionExample" class="collapse">
                                 <div class="card-body">
                                     <div class="part">
                                         <p class="title">Sesión 01</p>
@@ -336,10 +336,10 @@
                         </div>
                         <div class="card">
                             <div id="2" class="card-header">
-                                <h2 class="mb-0">
+                                <h2 class="mb-0" data-toggle="collapse" data-target="#session-2" aria-expanded="false"
+                                    aria-controls="session-2">
                                     <div>
-                                        <button type="button" data-toggle="collapse" data-target="#session-2"
-                                            aria-expanded="false" aria-controls="session-2"
+                                        <button type="button"
                                             class="btn btn-link text-dark font-weight-bold text-uppercase collapsible-link">
                                             <img src="./imgs/icon/md-arrow-down.svg" class="normal" alt="">
                                             <img src="./imgs/icon/md-arrow-up.svg" class="active" alt="">
@@ -394,10 +394,10 @@
                         </div>
                         <div class="card">
                             <div id="3" class="card-header">
-                                <h2 class="mb-0">
+                                <h2 class="mb-0" data-toggle="collapse" data-target="#session-3" aria-expanded="false"
+                                    aria-controls="session-3">
                                     <div>
-                                        <button type="button" data-toggle="collapse" data-target="#session-3"
-                                            aria-expanded="false" aria-controls="session-3"
+                                        <button type="button"
                                             class="btn btn-link text-dark font-weight-bold text-uppercase collapsible-link">
                                             <img src="./imgs/icon/md-arrow-down.svg" class="normal" alt="">
                                             <img src="./imgs/icon/md-arrow-up.svg" class="active" alt="">
@@ -452,10 +452,10 @@
                         </div>
                         <div class="card">
                             <div id="4" class="card-header">
-                                <h2 class="mb-0">
+                                <h2 class="mb-0" data-toggle="collapse" data-target="#session-4" aria-expanded="false"
+                                    aria-controls="session-4">
                                     <div>
-                                        <button type="button" data-toggle="collapse" data-target="#session-4"
-                                            aria-expanded="false" aria-controls="session-4"
+                                        <button type="button"
                                             class="btn btn-link text-dark font-weight-bold text-uppercase collapsible-link">
                                             <img src="./imgs/icon/md-arrow-down.svg" class="normal" alt="">
                                             <img src="./imgs/icon/md-arrow-up.svg" class="active" alt="">
@@ -510,10 +510,10 @@
                         </div>
                         <div class="card">
                             <div id="5" class="card-header">
-                                <h2 class="mb-0">
+                                <h2 class="mb-0" data-toggle="collapse" data-target="#session-5" aria-expanded="false"
+                                    aria-controls="session-5">
                                     <div>
-                                        <button type="button" data-toggle="collapse" data-target="#session-5"
-                                            aria-expanded="false" aria-controls="session-5"
+                                        <button type="button"
                                             class="btn btn-link text-dark font-weight-bold text-uppercase collapsible-link">
                                             <img src="./imgs/icon/md-arrow-down.svg" class="normal" alt="">
                                             <img src="./imgs/icon/md-arrow-up.svg" class="active" alt="">
@@ -568,10 +568,10 @@
                         </div>
                         <div class="card">
                             <div id="6" class="card-header">
-                                <h2 class="mb-0">
+                                <h2 class="mb-0" data-toggle="collapse" data-target="#session-6" aria-expanded="false"
+                                    aria-controls="session-6">
                                     <div>
-                                        <button type="button" data-toggle="collapse" data-target="#session-6"
-                                            aria-expanded="false" aria-controls="session-6"
+                                        <button type="button"
                                             class="btn btn-link text-dark font-weight-bold text-uppercase collapsible-link">
                                             <img src="./imgs/icon/md-arrow-down.svg" class="normal" alt="">
                                             <img src="./imgs/icon/md-arrow-up.svg" class="active" alt="">
@@ -628,17 +628,17 @@
                 </div>
             </div>
             <div class="article section-3">
-                <p class="title">
+                <p class="title down-arrow collapsed" data-toggle="collapse" data-target="#section3-container">
                     <span>
                         <img src="./imgs/icon/black-list.svg" class="menu" alt="">
                         Horarios y Frecuencia
                     </span>
-                    <a href="#" class="down-arrow" data-toggle="collapse" data-target="#section3-container">
+                    <a>
                         <img src="./imgs/icon/down-arrow.svg" class="down" alt="">
                         <img src="./imgs/icon/up-arrow.svg" class="up" alt="">
                     </a>
                 </p>
-                <div id="section3-container" class="collapse show">
+                <div id="section3-container" class="collapse">
                     <div class="content">
                         <div class="sub-section sub-section-2">
                             <div class="table">
@@ -674,17 +674,17 @@
                 </div>
             </div>
             <div class="article section-4">
-                <p class="title">
+                <p class="title down-arrow collapsed" data-toggle="collapse" data-target="#section4-container">
                     <span>
                         <img src="./imgs/icon/black-list.svg" class="menu" alt="">
                         Certificación
                     </span>
-                    <a href="#" class="down-arrow" data-toggle="collapse" data-target="#section4-container">
+                    <a>
                         <img src="./imgs/icon/down-arrow.svg" class="down" alt="">
                         <img src="./imgs/icon/up-arrow.svg" class="up" alt="">
                     </a>
                 </p>
-                <div id="section4-container" class="collapse show">
+                <div id="section4-container" class="collapse">
                     <div class="content">
                         <div class="sub-section-1 sub-section">
                             <div class="avatar">
@@ -724,17 +724,17 @@
                 </div>
             </div>
             <div class="article section-5">
-                <p class="title">
+                <p class="title down-arrow collapsed" data-toggle="collapse" data-target="#section5-container">
                     <span>
                         <img src="./imgs/icon/black-list.svg" class="menu" alt="">
                         Profesores
                     </span>
-                    <a href="#" class="down-arrow" data-toggle="collapse" data-target="#section5-container">
+                    <a>
                         <img src="./imgs/icon/down-arrow.svg" class="down" alt="">
                         <img src="./imgs/icon/up-arrow.svg" class="up" alt="">
                     </a>
                 </p>
-                <div id="section5-container" class="collapse show">
+                <div id="section5-container" class="collapse">
                     <div class="content">
                         <div class="avatar">
                             <img src="./imgs/avatar/8.png" alt="">
@@ -757,17 +757,17 @@
                 </div>
             </div>
             <div class="article section-6">
-                <p class="title">
+                <p class="title down-arrow collapsed" data-toggle="collapse" data-target="#section6-container">
                     <span>
                         <img src="./imgs/icon/black-list.svg" class="menu" alt="">
                         Inversión
                     </span>
-                    <a href="#" class="down-arrow" data-toggle="collapse" data-target="#section6-container">
+                    <a>
                         <img src="./imgs/icon/down-arrow.svg" class="down" alt="">
                         <img src="./imgs/icon/up-arrow.svg" class="up" alt="">
                     </a>
                 </p>
-                <div id="section6-container" class="collapse show">
+                <div id="section6-container" class="collapse">
                     <div class="content">
                         <div class="row m-0">
                             <div class="col-12 col-md-4 item">
@@ -805,17 +805,17 @@
                 </div>
             </div>
             <div class="article section-8">
-                <p class="title">
+                <p class="title down-arrow collapsed" data-toggle="collapse" data-target="#section8-container">
                     <span>
                         <img src="./imgs/icon/black-list.svg" class="menu" alt="">
                         Selecciona tu método de pago
                     </span>
-                    <a href="#" class="down-arrow" data-toggle="collapse" data-target="#section8-container">
+                    <a>
                         <img src="./imgs/icon/down-arrow.svg" class="down" alt="">
                         <img src="./imgs/icon/up-arrow.svg" class="up" alt="">
                     </a>
                 </p>
-                <div id="section8-container" class="collapse show">
+                <div id="section8-container" class="collapse">
                     <div class="content">
                         <div class="content sub-section-1">
                             <div class="row m-0">
@@ -836,14 +836,14 @@
                                 </div>
                             </div>
                         </div>
-                        <p class="sub-title">
+                        <p class="sub-title collapsed" data-toggle="collapse" data-target="#section8-2-container">
                             ¿Cómo hacer para realizar el pago?
-                            <a data-toggle="collapse" data-target="#section8-2-container">
+                            <a>
                                 <img src="./imgs/icon/sub-grey-arrow.svg" class="down" alt="">
                                 <img src="./imgs/icon/sub-grey-arrow-up.svg" class="up" alt="">
                             </a>
                         </p>
-                        <div id="section8-2-container" class="collapse show">
+                        <div id="section8-2-container" class="collapse">
                             <div class="content sub-section-2">
                                 <div class="row m-0">
                                     <div class="col-12 col-md-6 item">
@@ -881,14 +881,14 @@
                                 </div>
                             </div>
                         </div>
-                        <p class="sub-title">
+                        <p class="sub-title collapsed" data-toggle="collapse" data-target="#section8-3-container">
                             ¿Cómo hacer para realizar el pago?
-                            <a data-toggle="collapse" data-target="#section8-3-container">
+                            <a>
                                 <img src="./imgs/icon/sub-grey-arrow.svg" class="down" alt="">
                                 <img src="./imgs/icon/sub-grey-arrow-up.svg" class="up" alt="">
                             </a>
                         </p>
-                        <div id="section8-3-container" class="collapse show">
+                        <div id="section8-3-container" class="collapse">
                             <div class="content sub-section-3">
                                 <div class="row m-0">
                                     <div class="col-12 col-md-6 item">
@@ -1002,17 +1002,17 @@
                 </div>
             </div>
             <div class="article section-10">
-                <p class="title">
+                <p class="title down-arrow collapsed" data-toggle="collapse" data-target="#section10-container">
                     <span>
                         <img src="./imgs/icon/black-list.svg" class="menu" alt="">
                         Escribenos y nosotros te ayudamos
                     </span>
-                    <a href="#" class="down-arrow" data-toggle="collapse" data-target="#section10-container">
+                    <a>
                         <img src="./imgs/icon/down-arrow.svg" class="down" alt="">
                         <img src="./imgs/icon/up-arrow.svg" class="up" alt="">
                     </a>
                 </p>
-                <div id="section10-container" class="collapse show">
+                <div id="section10-container" class="collapse">
                     <div class="content">
                         <div class="row m-0">
                             <div class="col-12 col-md-6 user-card">
@@ -1091,6 +1091,49 @@
                 </div>
                 <div class="footer">
                     Incluye Certificación y envio
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="login-modal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="row m-0">
+                        <div class="col-12 col-md-6 div1">
+                            <img src="./imgs/logo-sm.svg" class="logo" alt="">
+                            <p class="title">Bienvenido</p>
+                            <div class="pc">
+                                <img src="./imgs/pc-2.png" alt="">
+                                <p class="descr">sigue aprendiendo y mejorando<br>
+                                    tus competencias profesionales.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 div2">
+                            <p class="title">
+                                Iniciar Sesión para participar<br>
+                                y Comentar en la transmisión
+                            </p>
+                            <button class="outline-danger">
+                                <img src="./imgs/icon/gmail.svg" alt="">
+                                Inicia sesión con Gmail
+                            </button>
+                            <button class="outline-dark">
+                                <img src="./imgs/icon/facebook-lg.svg" alt="">
+                                Inicia Sesión con Facebook
+                            </button>
+                            <button class="outline-info">
+                                <img src="./imgs/icon/linkedin.svg" alt="">
+                                Inicia Sesión con Linkedin
+                            </button>
+                            <p class="descr">Ingresa tu email y nombre para<br> que puedas resgistrarte</p>
+                            <button class="outline-primary">
+                                <img src="./imgs/icon/blue-pencil.svg" alt="">
+                                Regístrate
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -310,10 +310,9 @@ body {
       padding-top: 86.5px;
       width: calc(100% - 420px);
       .brief-dashboard {
-        padding: 0 115px 0 45px;
+        padding: 25px 45px;
         position: absolute;
         width: 100%;
-        padding: 28px;
         border-radius: 52px;
         top: 0;
         background: #FFF;
@@ -373,6 +372,7 @@ body {
       }
       .article {
         .title {
+          cursor: pointer;
           padding: 0 20px;
           display: flex;
           align-items: center;
@@ -419,9 +419,22 @@ body {
               padding: 0 28px;
               background: #FFF;
               .card-header {
+                cursor: pointer;
                 border-radius: 9px 9px 0 0;
                 background: none;
                 padding: 30px 26px 31px 0px;
+                [aria-expanded="true"] .normal {
+                  display: none;
+                }
+                [aria-expanded="true"] .active {
+                  display: inline;
+                }
+                [aria-expanded="false"] .active {
+                  display: inline;
+                }
+                [aria-expanded="false"] .active {
+                  display: none;
+                }
                 h2 {
                   display: flex;
                   align-items: center;
@@ -431,18 +444,6 @@ body {
                     align-items: center;
                     button {
                       margin-right: 28px;
-                    }
-                    button[aria-expanded="true"] .normal {
-                      display: none;
-                    }
-                    button[aria-expanded="true"] .active {
-                      display: inline;
-                    }
-                    button[aria-expanded="false"] .active {
-                      display: inline;
-                    }
-                    button[aria-expanded="false"] .active {
-                      display: none;
                     }
                     span {
                       font: {
@@ -626,9 +627,6 @@ body {
         }
       }
       .section-5 {
-        .title {
-          margin-top: 60px;
-        }
         .content {
           padding: 42px 54px 32px;
           display: flex;
@@ -759,6 +757,7 @@ body {
       .section-8 {
         .content {
           .sub-title {
+            cursor: pointer;
             display: flex;
             padding: 53px 20px 30px 60px;
             justify-content: space-between;
@@ -1126,6 +1125,120 @@ body {
       }
     }
   }
+#login-modal {
+        .modal-dialog {
+            max-width: 890px;
+            width: calc(100% - 50px);
+            margin: 1.75rem auto!important;
+            .modal-content {
+                border-radius: 12px;
+                border: none;
+                .modal-body {
+                  padding: 0;
+                  .div1 {
+                    border-radius: 12px 0 0 12px;
+                    background: #2A50E8;
+                    padding: 44px;
+                    .logo {
+                      margin-left: 30px;
+                      margin-bottom: 26.5px;
+                    }
+                    .title {
+                      margin-left: 30px;
+                      font: {
+                        size: 35px;
+                        weight: bold;
+                        family: $mainFont;
+                      }
+                      color: white;
+                      margin-bottom: 13px;
+                    }
+                    .pc {
+                      width: 100%;
+                      img {
+                        width: 100%;
+                      }
+                      position: relative;
+                      .descr {
+                      margin-left: 30px;
+                        position: absolute;
+                        bottom: 0;
+                        color: white;
+                        font: {
+                          size: 18px;
+                          weight: bold;
+                          family: $mainFont;
+                        }
+                      }
+                    }
+                  }
+                  .div2 {
+                      padding: 31px 46px 27px;
+                      .title {
+                          font: {
+                              size: 20px;
+                              weight: 600;
+                              family: $Raleway;
+                          }
+                          margin-bottom: 21px;
+                          text-align: center;
+                      }
+                      button {
+                          width: 100%;
+                          height: 56px;
+                          margin-bottom: 7px;
+                          border-radius: 38px;
+                          position: relative;
+                          padding-left: 30px;
+                          font: {
+                              size: 18px;
+                              weight: bold;
+                              family: $mainFont;
+                          }
+                          img {
+                              margin-right: 18px;
+                              position: absolute;
+                              top: 26px;
+                              transform: translate(0, -50%);
+                              left: 30px;
+                          }
+                      }
+                      .descr {
+                          font: {
+                              size: 20px;
+                              weight: 600;
+                              family: $Raleway;
+                          }
+                          text-align: center;
+                          margin: 13px 0 23px;
+                          line-height: 24px;
+                      }
+                      .outline-dark {
+                          background: white;
+                          color: #041956;
+                          border: 2px solid #041956;
+                      }
+                      .outline-info {
+                          background: white;
+                          color: #006DB2;
+                          border: 2px solid #006DB2;
+                      }
+                      .outline-danger {
+                          background: white;
+                          color: #CB1566;
+                          border: 2px solid #CB1566;
+                      }
+                      .outline-primary {
+                          background: white;
+                          color: #2A50E8;
+                          border: 2px solid #2A50E8;
+                          font-size: 20px;
+                      }
+                  }
+              }
+          }
+        }
+    }
 }
 @media(max-width: 1600px) {
   body {

@@ -4,20 +4,20 @@ body {
   /* H    andle on hover */
 }
 
-body a[data-toggle="collapse"] .up {
+body [data-toggle="collapse"] .up {
   display: inline;
 }
 
-body a[data-toggle="collapse"] .down {
+body [data-toggle="collapse"] .down {
   display: none;
 }
 
-body a[data-toggle="collapse"].collapsed .up {
-  display: none;
+body [data-toggle="collapse"].collapsed .up {
+  display: none !important;
 }
 
-body a[data-toggle="collapse"].collapsed .down {
-  display: inline;
+body [data-toggle="collapse"].collapsed .down {
+  display: inline !important;
 }
 
 body ::-webkit-scrollbar {

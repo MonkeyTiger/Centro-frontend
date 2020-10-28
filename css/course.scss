@@ -24,7 +24,7 @@ body {
         position: fixed;
         z-index: 100;
         .menu {
-            ul {
+            &>ul {
                 margin-bottom: 0;
                 display: flex;
                 li {
@@ -38,6 +38,45 @@ body {
                             weight: bold;
                         }
                         color: white;
+                    }
+                    .dropdown-menu {
+                        width: 323px;
+                        border-radius: 6px;
+                        box-shadow : 0 3px 6px rgba(0, 0, 0, 0.16);
+                        padding: 30px 35px 10px;
+                        li {
+                            margin-bottom: 20px;
+                            margin-left: 0;
+                            a {
+                                color : black;
+                                img {
+                                    margin-right: 16px;
+                                }
+                                .hover {
+                                    display: none;
+                                }
+                            }
+                            a:hover {
+                                color: #2A50E8;
+                                .hover {
+                                    display: inline;
+                                }
+                                .normal {
+                                    display: none;
+                                }
+                            }   
+                        }
+                        li.active {
+                            a {
+                                color: #2A50E8;
+                                .hover {
+                                    display: inline;
+                                }
+                                .normal {
+                                    display: none;
+                                }
+                            }
+                        }
                     }
                 }
             }

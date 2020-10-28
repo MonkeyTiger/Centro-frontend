@@ -1,16 +1,16 @@
 @import "./variable.scss";
 body {
-    a[data-toggle="collapse"] .up{
+    [data-toggle="collapse"] .up{
         display: inline;
     }
-    a[data-toggle="collapse"] .down{
+    [data-toggle="collapse"] .down{
         display: none;
     }
-    a[data-toggle="collapse"].collapsed .up{
-        display: none;
+    [data-toggle="collapse"].collapsed .up{
+        display: none!important;
     }
-    a[data-toggle="collapse"].collapsed .down{
-        display: inline;
+    [data-toggle="collapse"].collapsed .down{
+        display: inline!important;
     }
      ::-webkit-scrollbar {
         width: 5px;

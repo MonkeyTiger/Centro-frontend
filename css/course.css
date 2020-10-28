@@ -4,6 +4,22 @@ body {
   /* H    andle on hover */
 }
 
+body a[data-toggle="collapse"] .up {
+  display: inline;
+}
+
+body a[data-toggle="collapse"] .down {
+  display: none;
+}
+
+body a[data-toggle="collapse"].collapsed .up {
+  display: none;
+}
+
+body a[data-toggle="collapse"].collapsed .down {
+  display: inline;
+}
+
 body ::-webkit-scrollbar {
   width: 5px;
 }
@@ -35,7 +51,7 @@ body .badge-danger {
   background: #FF0101;
 }
 
-body button:hover {
+body button, body a {
   cursor: pointer;
 }
 
@@ -127,24 +143,73 @@ body header .menu-button {
   cursor: pointer;
 }
 
-body header .menu ul {
+body header .menu > ul {
   margin-bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-body header .menu ul li {
+body header .menu > ul li {
   margin-left: 31px;
   list-style-type: none;
 }
 
-body header .menu ul li a {
+body header .menu > ul li a {
   text-decoration: none;
   font-family: "Montserrat";
   font-size: 18px;
   font-weight: bold;
   color: white;
+}
+
+body header .menu > ul li .dropdown-menu {
+  width: 323px;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  padding: 30px 35px 10px;
+}
+
+body header .menu > ul li .dropdown-menu li {
+  margin-bottom: 20px;
+  margin-left: 0;
+}
+
+body header .menu > ul li .dropdown-menu li a {
+  color: black;
+}
+
+body header .menu > ul li .dropdown-menu li a img {
+  margin-right: 16px;
+}
+
+body header .menu > ul li .dropdown-menu li a .hover {
+  display: none;
+}
+
+body header .menu > ul li .dropdown-menu li a:hover {
+  color: #2A50E8;
+}
+
+body header .menu > ul li .dropdown-menu li a:hover .hover {
+  display: inline;
+}
+
+body header .menu > ul li .dropdown-menu li a:hover .normal {
+  display: none;
+}
+
+body header .menu > ul li .dropdown-menu li.active a {
+  color: #2A50E8;
+}
+
+body header .menu > ul li .dropdown-menu li.active a .hover {
+  display: inline;
+}
+
+body header .menu > ul li .dropdown-menu li.active a .normal {
+  display: none;
 }
 
 body header .notification {
